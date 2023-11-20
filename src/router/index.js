@@ -6,46 +6,60 @@ import Register from '../views/Register.vue'
 import Login from '../views/Login.vue'
 import Admin from '../views/AdminDashboard.vue'
 import Table from '../views/DashboardTable.vue'
+import Upload from '../views/Upload.vue'
+import Validator from '../views/Validator.vue'
+import Validators from '../components/Validator.vue'
 
 const routes = [
   {
     path: '/',
-    name: 'home',
     component: HomeView
   },
   {
     path: '/login',
-    name: 'login',
     component: Login
   },
   {
     path: '/register',
-    name: 'register',
     component: Register
   },
   {
     path: '/update',
-    name: 'Updating',
     component: Updating_Module
   },
   {
     path: '/user',
-    name: 'Main',
     component: Dashboard
   },
   {
     path: '/dashboard',
-    name: 'AdminDashboard',
     component: Admin
   },
   {
     path: '/table',
-    name: 'DashboardTable',
+    name: 'table',
     component: Table
   },
   {
+    path: '/upload',
+    component: Upload
+  },
+  // {
+  //   path: '/validator/:entryId',
+  //   name: 'validate',
+  //   component: Validators,
+  //   props: true,
+  // },
+  {
+    path: '/validate/:entryId',
+    name: 'validate', // Add this line
+    component: Validator,
+    props: true, // Enable passing route params as props
+    // props: route => ({ details: route.params.details || {} })
+ 
+  },
+  {
     path: '/about',
-    name: 'about',
     // route level code-splitting
     // this generates a separate chunk (about.[hash].js) for this route
     // which is lazy-loaded when the route is visited.

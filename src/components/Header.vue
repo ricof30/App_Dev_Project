@@ -13,7 +13,7 @@
 
         <!-- Topbar Search -->
             <div class="input-group">
-                <input v-model="householdId" type="text" class="form-control bg-light border-0 small" placeholder="Enter HouseHold-id">
+                <input v-model="householdId" type="text" class="form-control bg-light border-0 small " placeholder="Enter HouseHold-id">
                 <div class="input-group-append">
                     <button class="btn btn-primary"  @click="searchHousehold">
                         <i class="fas fa-search fa-sm"></i>
@@ -155,10 +155,9 @@ import axios from 'axios';
 
 </script>
 
-<style>
-
+<style  >
 @import '@/assets/assets/css/sb-admin-2.min.css';
 @import '@/assets/assets/vendor/fontawesome-free/css/all.min.css';
 
-</style >
+</style>
 
