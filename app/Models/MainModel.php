@@ -8,13 +8,48 @@ class MainModel extends Model
 {
     protected $DBGroup          = 'default';
     protected $table            = 'minsu_victoria_roster_list_as_of_october_2023';
-    protected $primaryKey       = 'id';
+    protected $primaryKey       = 'ENTRY_ID';
     protected $useAutoIncrement = true;
     protected $returnType       = 'array';
     protected $useSoftDeletes   = false;
     protected $protectFields    = true;
-    protected $allowedFields    = ['MUNICIPALITY','BRGY','HH_ID','ENTRY_ID','FIRST_NAME','MIDDLE_NAME',
-                                    'LAST_NAME','BIRTHDAY','AGE','SEX','CLIENT_STATUS'];
+    protected $allowedFields    = [ 'REGION',
+    'PROVINCE',
+    'MUNICIPALITY',
+    'BRGY',
+    'HH_ID',
+    'ENTRY_ID',
+    'FIRST_NAME',
+    'MIDDLE_NAME',
+    'LAST_NAME',
+    'EXT_NAME',
+    'BIRTHDAY',
+    'AGE',
+    'SEX',
+    'CLIENT_STATUS',
+    'MEMBER_STATUS',
+    'RELATION_TO_HH_HEAD',
+    'GRANTEE',
+    'REGISTRATION_STATUS',
+    'HH_SET',
+    'SOLO_PARENT',
+    'IP_AFFILIATION',
+    'phil_id',
+    'PREGNANCY_STATUS',
+    'HEALTH_FACILITY',
+    'CHILD_BENE',
+    'GRADE_LEVEL',
+    'ATTEND_SCHOOL',
+    'SCHOOL_NAME',
+    'MONITORED_EDUC',
+    'REASON_FOR_NOT_ATTENDING_EDUC',
+    'DATE_REASON_EDUC',
+    'MONITORED_HEALTH',
+    'REASON_FOR_NOT_ATTENDING_HEALTH',
+    'DATE_REASON_HEALTH',
+    'DISABILITY_ID',
+    'DISABILITY_STATUS',
+    'LRN',];
 
     // Dates
     protected $useTimestamps = false;

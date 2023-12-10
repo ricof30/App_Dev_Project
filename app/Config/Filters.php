@@ -24,6 +24,8 @@ class Filters extends BaseConfig
         'honeypot'      => Honeypot::class,
         'invalidchars'  => InvalidChars::class,
         'secureheaders' => SecureHeaders::class,
+        'session' => \CodeIgniter\Session\Session::class,
+       
     ];
 
     /**
@@ -38,6 +40,7 @@ class Filters extends BaseConfig
             // 'honeypot',
             // 'csrf',
             // 'invalidchars',
+            
         ],
         'after' => [
             'toolbar',
@@ -57,7 +60,7 @@ class Filters extends BaseConfig
      * permits any HTTP method to access a controller. Accessing the controller
      * with a method you don't expect could bypass the filter.
      */
-    public array $methods = [];
+    public array $methods = [ ];
 
     /**
      * List of filter aliases that should run on any

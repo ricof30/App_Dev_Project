@@ -1,0 +1,915 @@
+CRITICAL - 2023-12-09 04:59:43 --> Call to undefined method App\Models\MainModel::getAll
+in SYSTEMPATH\Model.php on line 873.
+ 1 APPPATH\Controllers\MainController.php(38): CodeIgniter\Model->__call('getAll', [])
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\MainController->getList()
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MainController))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(85): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-09 05:00:01 --> Call to undefined method App\Models\MainModel::get_Results
+in SYSTEMPATH\Model.php on line 873.
+ 1 APPPATH\Controllers\MainController.php(38): CodeIgniter\Model->__call('get_Results', [])
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\MainController->getList()
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MainController))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(85): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-09 05:00:07 --> Call to undefined method App\Models\MainModel::getAll
+in SYSTEMPATH\Model.php on line 873.
+ 1 APPPATH\Controllers\MainController.php(38): CodeIgniter\Model->__call('getAll', [])
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\MainController->getList()
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MainController))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(85): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-12-09 05:32:15 --> mysqli_sql_exception: Unknown column 'id' in 'where clause' in C:\laragon\www\backend\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\laragon\www\backend\system\Database\MySQLi\Connection.php(306): mysqli->query('DELETE FROM `mi...', 0)
+#1 C:\laragon\www\backend\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('DELETE FROM `mi...')
+#2 C:\laragon\www\backend\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('DELETE FROM `mi...')
+#3 C:\laragon\www\backend\system\Database\BaseBuilder.php(2790): CodeIgniter\Database\BaseConnection->query('DELETE FROM `mi...', Array, false)
+#4 C:\laragon\www\backend\system\Model.php(445): CodeIgniter\Database\BaseBuilder->delete()
+#5 C:\laragon\www\backend\system\BaseModel.php(1080): CodeIgniter\Model->doDelete(Array, false)
+#6 C:\laragon\www\backend\app\Controllers\MainController.php(89): CodeIgniter\BaseModel->delete(Array)
+#7 C:\laragon\www\backend\system\CodeIgniter.php(919): App\Controllers\MainController->deleteBeneficiary('1084788')
+#8 C:\laragon\www\backend\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MainController))
+#9 C:\laragon\www\backend\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\laragon\www\backend\public\index.php(85): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2023-12-09 05:32:15 --> Unknown column 'id' in 'where clause'
+in SYSTEMPATH\Database\BaseConnection.php on line 646.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2790): CodeIgniter\Database\BaseConnection->query('DELETE FROM `minsu_victoria_roster_list_as_of_october_2023`
+WHERE `id` IN :id:', [...], false)
+ 2 SYSTEMPATH\Model.php(445): CodeIgniter\Database\BaseBuilder->delete()
+ 3 SYSTEMPATH\BaseModel.php(1080): CodeIgniter\Model->doDelete([...], false)
+ 4 APPPATH\Controllers\MainController.php(89): CodeIgniter\BaseModel->delete([...])
+ 5 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\MainController->deleteBeneficiary('1084788')
+ 6 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MainController))
+ 7 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(85): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-12-09 05:32:24 --> mysqli_sql_exception: Unknown column 'id' in 'where clause' in C:\laragon\www\backend\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\laragon\www\backend\system\Database\MySQLi\Connection.php(306): mysqli->query('DELETE FROM `mi...', 0)
+#1 C:\laragon\www\backend\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('DELETE FROM `mi...')
+#2 C:\laragon\www\backend\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('DELETE FROM `mi...')
+#3 C:\laragon\www\backend\system\Database\BaseBuilder.php(2790): CodeIgniter\Database\BaseConnection->query('DELETE FROM `mi...', Array, false)
+#4 C:\laragon\www\backend\system\Model.php(445): CodeIgniter\Database\BaseBuilder->delete()
+#5 C:\laragon\www\backend\system\BaseModel.php(1080): CodeIgniter\Model->doDelete(Array, false)
+#6 C:\laragon\www\backend\app\Controllers\MainController.php(89): CodeIgniter\BaseModel->delete(Array)
+#7 C:\laragon\www\backend\system\CodeIgniter.php(919): App\Controllers\MainController->deleteBeneficiary('1084788')
+#8 C:\laragon\www\backend\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MainController))
+#9 C:\laragon\www\backend\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\laragon\www\backend\public\index.php(85): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2023-12-09 05:32:24 --> Unknown column 'id' in 'where clause'
+in SYSTEMPATH\Database\BaseConnection.php on line 646.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2790): CodeIgniter\Database\BaseConnection->query('DELETE FROM `minsu_victoria_roster_list_as_of_october_2023`
+WHERE `id` IN :id:', [...], false)
+ 2 SYSTEMPATH\Model.php(445): CodeIgniter\Database\BaseBuilder->delete()
+ 3 SYSTEMPATH\BaseModel.php(1080): CodeIgniter\Model->doDelete([...], false)
+ 4 APPPATH\Controllers\MainController.php(89): CodeIgniter\BaseModel->delete([...])
+ 5 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\MainController->deleteBeneficiary('1084788')
+ 6 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MainController))
+ 7 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(85): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-12-09 05:32:28 --> mysqli_sql_exception: Unknown column 'id' in 'where clause' in C:\laragon\www\backend\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\laragon\www\backend\system\Database\MySQLi\Connection.php(306): mysqli->query('DELETE FROM `mi...', 0)
+#1 C:\laragon\www\backend\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('DELETE FROM `mi...')
+#2 C:\laragon\www\backend\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('DELETE FROM `mi...')
+#3 C:\laragon\www\backend\system\Database\BaseBuilder.php(2790): CodeIgniter\Database\BaseConnection->query('DELETE FROM `mi...', Array, false)
+#4 C:\laragon\www\backend\system\Model.php(445): CodeIgniter\Database\BaseBuilder->delete()
+#5 C:\laragon\www\backend\system\BaseModel.php(1080): CodeIgniter\Model->doDelete(Array, false)
+#6 C:\laragon\www\backend\app\Controllers\MainController.php(89): CodeIgniter\BaseModel->delete(Array)
+#7 C:\laragon\www\backend\system\CodeIgniter.php(919): App\Controllers\MainController->deleteBeneficiary('1084788')
+#8 C:\laragon\www\backend\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MainController))
+#9 C:\laragon\www\backend\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\laragon\www\backend\public\index.php(85): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2023-12-09 05:32:28 --> Unknown column 'id' in 'where clause'
+in SYSTEMPATH\Database\BaseConnection.php on line 646.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2790): CodeIgniter\Database\BaseConnection->query('DELETE FROM `minsu_victoria_roster_list_as_of_october_2023`
+WHERE `id` IN :id:', [...], false)
+ 2 SYSTEMPATH\Model.php(445): CodeIgniter\Database\BaseBuilder->delete()
+ 3 SYSTEMPATH\BaseModel.php(1080): CodeIgniter\Model->doDelete([...], false)
+ 4 APPPATH\Controllers\MainController.php(89): CodeIgniter\BaseModel->delete([...])
+ 5 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\MainController->deleteBeneficiary('1084788')
+ 6 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MainController))
+ 7 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(85): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-12-09 05:33:44 --> mysqli_sql_exception: Unknown column 'id' in 'where clause' in C:\laragon\www\backend\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\laragon\www\backend\system\Database\MySQLi\Connection.php(306): mysqli->query('DELETE FROM `mi...', 0)
+#1 C:\laragon\www\backend\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('DELETE FROM `mi...')
+#2 C:\laragon\www\backend\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('DELETE FROM `mi...')
+#3 C:\laragon\www\backend\system\Database\BaseBuilder.php(2790): CodeIgniter\Database\BaseConnection->query('DELETE FROM `mi...', Array, false)
+#4 C:\laragon\www\backend\system\Model.php(445): CodeIgniter\Database\BaseBuilder->delete()
+#5 C:\laragon\www\backend\system\BaseModel.php(1080): CodeIgniter\Model->doDelete(Array, false)
+#6 C:\laragon\www\backend\app\Controllers\MainController.php(89): CodeIgniter\BaseModel->delete(Array)
+#7 C:\laragon\www\backend\system\CodeIgniter.php(919): App\Controllers\MainController->deleteBeneficiary('1084788')
+#8 C:\laragon\www\backend\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MainController))
+#9 C:\laragon\www\backend\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\laragon\www\backend\public\index.php(85): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2023-12-09 05:33:44 --> Unknown column 'id' in 'where clause'
+in SYSTEMPATH\Database\BaseConnection.php on line 646.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2790): CodeIgniter\Database\BaseConnection->query('DELETE FROM `minsu_victoria_roster_list_as_of_october_2023`
+WHERE `id` IN :id:', [...], false)
+ 2 SYSTEMPATH\Model.php(445): CodeIgniter\Database\BaseBuilder->delete()
+ 3 SYSTEMPATH\BaseModel.php(1080): CodeIgniter\Model->doDelete([...], false)
+ 4 APPPATH\Controllers\MainController.php(89): CodeIgniter\BaseModel->delete([...])
+ 5 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\MainController->deleteBeneficiary('1084788')
+ 6 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MainController))
+ 7 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(85): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-12-09 05:35:47 --> mysqli_sql_exception: Unknown column 'id' in 'where clause' in C:\laragon\www\backend\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\laragon\www\backend\system\Database\MySQLi\Connection.php(306): mysqli->query('DELETE FROM `mi...', 0)
+#1 C:\laragon\www\backend\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('DELETE FROM `mi...')
+#2 C:\laragon\www\backend\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('DELETE FROM `mi...')
+#3 C:\laragon\www\backend\system\Database\BaseBuilder.php(2790): CodeIgniter\Database\BaseConnection->query('DELETE FROM `mi...', Array, false)
+#4 C:\laragon\www\backend\system\Model.php(445): CodeIgniter\Database\BaseBuilder->delete()
+#5 C:\laragon\www\backend\system\BaseModel.php(1080): CodeIgniter\Model->doDelete(Array, false)
+#6 C:\laragon\www\backend\app\Controllers\MainController.php(89): CodeIgniter\BaseModel->delete(Array)
+#7 C:\laragon\www\backend\system\CodeIgniter.php(919): App\Controllers\MainController->deleteBeneficiary('1425536')
+#8 C:\laragon\www\backend\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MainController))
+#9 C:\laragon\www\backend\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\laragon\www\backend\public\index.php(85): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2023-12-09 05:35:47 --> Unknown column 'id' in 'where clause'
+in SYSTEMPATH\Database\BaseConnection.php on line 646.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2790): CodeIgniter\Database\BaseConnection->query('DELETE FROM `minsu_victoria_roster_list_as_of_october_2023`
+WHERE `id` IN :id:', [...], false)
+ 2 SYSTEMPATH\Model.php(445): CodeIgniter\Database\BaseBuilder->delete()
+ 3 SYSTEMPATH\BaseModel.php(1080): CodeIgniter\Model->doDelete([...], false)
+ 4 APPPATH\Controllers\MainController.php(89): CodeIgniter\BaseModel->delete([...])
+ 5 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\MainController->deleteBeneficiary('1425536')
+ 6 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MainController))
+ 7 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(85): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-12-09 05:37:32 --> mysqli_sql_exception: Unknown column 'id' in 'where clause' in C:\laragon\www\backend\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\laragon\www\backend\system\Database\MySQLi\Connection.php(306): mysqli->query('DELETE FROM `mi...', 0)
+#1 C:\laragon\www\backend\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('DELETE FROM `mi...')
+#2 C:\laragon\www\backend\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('DELETE FROM `mi...')
+#3 C:\laragon\www\backend\system\Database\BaseBuilder.php(2790): CodeIgniter\Database\BaseConnection->query('DELETE FROM `mi...', Array, false)
+#4 C:\laragon\www\backend\system\Model.php(445): CodeIgniter\Database\BaseBuilder->delete()
+#5 C:\laragon\www\backend\system\BaseModel.php(1080): CodeIgniter\Model->doDelete(Array, false)
+#6 C:\laragon\www\backend\app\Controllers\MainController.php(89): CodeIgniter\BaseModel->delete(Array)
+#7 C:\laragon\www\backend\system\CodeIgniter.php(919): App\Controllers\MainController->deleteBeneficiary('1084788')
+#8 C:\laragon\www\backend\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MainController))
+#9 C:\laragon\www\backend\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\laragon\www\backend\public\index.php(85): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2023-12-09 05:37:32 --> Unknown column 'id' in 'where clause'
+in SYSTEMPATH\Database\BaseConnection.php on line 646.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2790): CodeIgniter\Database\BaseConnection->query('DELETE FROM `minsu_victoria_roster_list_as_of_october_2023`
+WHERE `id` IN :id:', [...], false)
+ 2 SYSTEMPATH\Model.php(445): CodeIgniter\Database\BaseBuilder->delete()
+ 3 SYSTEMPATH\BaseModel.php(1080): CodeIgniter\Model->doDelete([...], false)
+ 4 APPPATH\Controllers\MainController.php(89): CodeIgniter\BaseModel->delete([...])
+ 5 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\MainController->deleteBeneficiary('1084788')
+ 6 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MainController))
+ 7 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(85): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-09 05:38:32 --> Deletes are not allowed unless they contain a "where" or "like" clause.
+in SYSTEMPATH\Database\BaseBuilder.php on line 2766.
+ 1 SYSTEMPATH\Model.php(445): CodeIgniter\Database\BaseBuilder->delete()
+ 2 SYSTEMPATH\BaseModel.php(1080): CodeIgniter\Model->doDelete(null, false)
+ 3 APPPATH\Controllers\MainController.php(89): CodeIgniter\BaseModel->delete(null)
+ 4 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\MainController->deleteBeneficiary('1084788')
+ 5 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MainController))
+ 6 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(85): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-12-09 05:39:38 --> mysqli_sql_exception: Unknown column 'id' in 'where clause' in C:\laragon\www\backend\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\laragon\www\backend\system\Database\MySQLi\Connection.php(306): mysqli->query('DELETE FROM `mi...', 0)
+#1 C:\laragon\www\backend\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('DELETE FROM `mi...')
+#2 C:\laragon\www\backend\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('DELETE FROM `mi...')
+#3 C:\laragon\www\backend\system\Database\BaseBuilder.php(2790): CodeIgniter\Database\BaseConnection->query('DELETE FROM `mi...', Array, false)
+#4 C:\laragon\www\backend\system\Model.php(445): CodeIgniter\Database\BaseBuilder->delete()
+#5 C:\laragon\www\backend\system\BaseModel.php(1080): CodeIgniter\Model->doDelete(Array, false)
+#6 C:\laragon\www\backend\app\Controllers\MainController.php(89): CodeIgniter\BaseModel->delete(Array)
+#7 C:\laragon\www\backend\system\CodeIgniter.php(919): App\Controllers\MainController->deleteBeneficiary('1084788')
+#8 C:\laragon\www\backend\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MainController))
+#9 C:\laragon\www\backend\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\laragon\www\backend\public\index.php(85): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2023-12-09 05:39:38 --> Unknown column 'id' in 'where clause'
+in SYSTEMPATH\Database\BaseConnection.php on line 646.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2790): CodeIgniter\Database\BaseConnection->query('DELETE FROM `minsu_victoria_roster_list_as_of_october_2023`
+WHERE `id` IN :id:', [...], false)
+ 2 SYSTEMPATH\Model.php(445): CodeIgniter\Database\BaseBuilder->delete()
+ 3 SYSTEMPATH\BaseModel.php(1080): CodeIgniter\Model->doDelete([...], false)
+ 4 APPPATH\Controllers\MainController.php(89): CodeIgniter\BaseModel->delete([...])
+ 5 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\MainController->deleteBeneficiary('1084788')
+ 6 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MainController))
+ 7 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(85): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-12-09 05:42:19 --> mysqli_sql_exception: Unknown column 'id' in 'where clause' in C:\laragon\www\backend\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\laragon\www\backend\system\Database\MySQLi\Connection.php(306): mysqli->query('DELETE FROM `mi...', 0)
+#1 C:\laragon\www\backend\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('DELETE FROM `mi...')
+#2 C:\laragon\www\backend\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('DELETE FROM `mi...')
+#3 C:\laragon\www\backend\system\Database\BaseBuilder.php(2790): CodeIgniter\Database\BaseConnection->query('DELETE FROM `mi...', Array, false)
+#4 C:\laragon\www\backend\system\Model.php(445): CodeIgniter\Database\BaseBuilder->delete()
+#5 C:\laragon\www\backend\system\BaseModel.php(1080): CodeIgniter\Model->doDelete(Array, false)
+#6 C:\laragon\www\backend\app\Controllers\MainController.php(89): CodeIgniter\BaseModel->delete(Array)
+#7 C:\laragon\www\backend\system\CodeIgniter.php(919): App\Controllers\MainController->deleteBeneficiary('1084788')
+#8 C:\laragon\www\backend\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MainController))
+#9 C:\laragon\www\backend\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\laragon\www\backend\public\index.php(85): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2023-12-09 05:42:19 --> Unknown column 'id' in 'where clause'
+in SYSTEMPATH\Database\BaseConnection.php on line 646.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2790): CodeIgniter\Database\BaseConnection->query('DELETE FROM `minsu_victoria_roster_list_as_of_october_2023`
+WHERE `id` IN :id:', [...], false)
+ 2 SYSTEMPATH\Model.php(445): CodeIgniter\Database\BaseBuilder->delete()
+ 3 SYSTEMPATH\BaseModel.php(1080): CodeIgniter\Model->doDelete([...], false)
+ 4 APPPATH\Controllers\MainController.php(89): CodeIgniter\BaseModel->delete([...])
+ 5 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\MainController->deleteBeneficiary('1084788')
+ 6 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MainController))
+ 7 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(85): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-12-09 05:42:21 --> mysqli_sql_exception: Unknown column 'id' in 'where clause' in C:\laragon\www\backend\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\laragon\www\backend\system\Database\MySQLi\Connection.php(306): mysqli->query('DELETE FROM `mi...', 0)
+#1 C:\laragon\www\backend\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('DELETE FROM `mi...')
+#2 C:\laragon\www\backend\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('DELETE FROM `mi...')
+#3 C:\laragon\www\backend\system\Database\BaseBuilder.php(2790): CodeIgniter\Database\BaseConnection->query('DELETE FROM `mi...', Array, false)
+#4 C:\laragon\www\backend\system\Model.php(445): CodeIgniter\Database\BaseBuilder->delete()
+#5 C:\laragon\www\backend\system\BaseModel.php(1080): CodeIgniter\Model->doDelete(Array, false)
+#6 C:\laragon\www\backend\app\Controllers\MainController.php(89): CodeIgniter\BaseModel->delete(Array)
+#7 C:\laragon\www\backend\system\CodeIgniter.php(919): App\Controllers\MainController->deleteBeneficiary('1084788')
+#8 C:\laragon\www\backend\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MainController))
+#9 C:\laragon\www\backend\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\laragon\www\backend\public\index.php(85): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2023-12-09 05:42:21 --> Unknown column 'id' in 'where clause'
+in SYSTEMPATH\Database\BaseConnection.php on line 646.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2790): CodeIgniter\Database\BaseConnection->query('DELETE FROM `minsu_victoria_roster_list_as_of_october_2023`
+WHERE `id` IN :id:', [...], false)
+ 2 SYSTEMPATH\Model.php(445): CodeIgniter\Database\BaseBuilder->delete()
+ 3 SYSTEMPATH\BaseModel.php(1080): CodeIgniter\Model->doDelete([...], false)
+ 4 APPPATH\Controllers\MainController.php(89): CodeIgniter\BaseModel->delete([...])
+ 5 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\MainController->deleteBeneficiary('1084788')
+ 6 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MainController))
+ 7 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(85): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-12-09 05:42:25 --> mysqli_sql_exception: Unknown column 'id' in 'where clause' in C:\laragon\www\backend\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\laragon\www\backend\system\Database\MySQLi\Connection.php(306): mysqli->query('DELETE FROM `mi...', 0)
+#1 C:\laragon\www\backend\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('DELETE FROM `mi...')
+#2 C:\laragon\www\backend\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('DELETE FROM `mi...')
+#3 C:\laragon\www\backend\system\Database\BaseBuilder.php(2790): CodeIgniter\Database\BaseConnection->query('DELETE FROM `mi...', Array, false)
+#4 C:\laragon\www\backend\system\Model.php(445): CodeIgniter\Database\BaseBuilder->delete()
+#5 C:\laragon\www\backend\system\BaseModel.php(1080): CodeIgniter\Model->doDelete(Array, false)
+#6 C:\laragon\www\backend\app\Controllers\MainController.php(89): CodeIgniter\BaseModel->delete(Array)
+#7 C:\laragon\www\backend\system\CodeIgniter.php(919): App\Controllers\MainController->deleteBeneficiary('1084788')
+#8 C:\laragon\www\backend\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MainController))
+#9 C:\laragon\www\backend\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\laragon\www\backend\public\index.php(85): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2023-12-09 05:42:25 --> Unknown column 'id' in 'where clause'
+in SYSTEMPATH\Database\BaseConnection.php on line 646.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2790): CodeIgniter\Database\BaseConnection->query('DELETE FROM `minsu_victoria_roster_list_as_of_october_2023`
+WHERE `id` IN :id:', [...], false)
+ 2 SYSTEMPATH\Model.php(445): CodeIgniter\Database\BaseBuilder->delete()
+ 3 SYSTEMPATH\BaseModel.php(1080): CodeIgniter\Model->doDelete([...], false)
+ 4 APPPATH\Controllers\MainController.php(89): CodeIgniter\BaseModel->delete([...])
+ 5 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\MainController->deleteBeneficiary('1084788')
+ 6 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MainController))
+ 7 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(85): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-12-09 05:43:15 --> mysqli_sql_exception: Unknown column 'id' in 'where clause' in C:\laragon\www\backend\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\laragon\www\backend\system\Database\MySQLi\Connection.php(306): mysqli->query('DELETE FROM `mi...', 0)
+#1 C:\laragon\www\backend\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('DELETE FROM `mi...')
+#2 C:\laragon\www\backend\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('DELETE FROM `mi...')
+#3 C:\laragon\www\backend\system\Database\BaseBuilder.php(2790): CodeIgniter\Database\BaseConnection->query('DELETE FROM `mi...', Array, false)
+#4 C:\laragon\www\backend\system\Model.php(445): CodeIgniter\Database\BaseBuilder->delete()
+#5 C:\laragon\www\backend\system\BaseModel.php(1080): CodeIgniter\Model->doDelete(Array, false)
+#6 C:\laragon\www\backend\app\Controllers\MainController.php(90): CodeIgniter\BaseModel->delete(Array)
+#7 C:\laragon\www\backend\system\CodeIgniter.php(919): App\Controllers\MainController->deleteBeneficiary('1084788')
+#8 C:\laragon\www\backend\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MainController))
+#9 C:\laragon\www\backend\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\laragon\www\backend\public\index.php(85): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2023-12-09 05:43:15 --> Unknown column 'id' in 'where clause'
+in SYSTEMPATH\Database\BaseConnection.php on line 646.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2790): CodeIgniter\Database\BaseConnection->query('DELETE FROM `minsu_victoria_roster_list_as_of_october_2023`
+WHERE `id` IN :id:', [...], false)
+ 2 SYSTEMPATH\Model.php(445): CodeIgniter\Database\BaseBuilder->delete()
+ 3 SYSTEMPATH\BaseModel.php(1080): CodeIgniter\Model->doDelete([...], false)
+ 4 APPPATH\Controllers\MainController.php(90): CodeIgniter\BaseModel->delete([...])
+ 5 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\MainController->deleteBeneficiary('1084788')
+ 6 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MainController))
+ 7 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(85): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-12-09 05:43:29 --> mysqli_sql_exception: Unknown column 'id' in 'where clause' in C:\laragon\www\backend\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\laragon\www\backend\system\Database\MySQLi\Connection.php(306): mysqli->query('DELETE FROM `mi...', 0)
+#1 C:\laragon\www\backend\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('DELETE FROM `mi...')
+#2 C:\laragon\www\backend\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('DELETE FROM `mi...')
+#3 C:\laragon\www\backend\system\Database\BaseBuilder.php(2790): CodeIgniter\Database\BaseConnection->query('DELETE FROM `mi...', Array, false)
+#4 C:\laragon\www\backend\system\Model.php(445): CodeIgniter\Database\BaseBuilder->delete()
+#5 C:\laragon\www\backend\system\BaseModel.php(1080): CodeIgniter\Model->doDelete(Array, false)
+#6 C:\laragon\www\backend\app\Controllers\MainController.php(90): CodeIgniter\BaseModel->delete(Array)
+#7 C:\laragon\www\backend\system\CodeIgniter.php(919): App\Controllers\MainController->deleteBeneficiary('1084788')
+#8 C:\laragon\www\backend\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MainController))
+#9 C:\laragon\www\backend\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\laragon\www\backend\public\index.php(85): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2023-12-09 05:43:29 --> Unknown column 'id' in 'where clause'
+in SYSTEMPATH\Database\BaseConnection.php on line 646.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2790): CodeIgniter\Database\BaseConnection->query('DELETE FROM `minsu_victoria_roster_list_as_of_october_2023`
+WHERE `id` IN :id:', [...], false)
+ 2 SYSTEMPATH\Model.php(445): CodeIgniter\Database\BaseBuilder->delete()
+ 3 SYSTEMPATH\BaseModel.php(1080): CodeIgniter\Model->doDelete([...], false)
+ 4 APPPATH\Controllers\MainController.php(90): CodeIgniter\BaseModel->delete([...])
+ 5 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\MainController->deleteBeneficiary('1084788')
+ 6 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MainController))
+ 7 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(85): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-12-09 05:43:51 --> mysqli_sql_exception: Unknown column 'id' in 'where clause' in C:\laragon\www\backend\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\laragon\www\backend\system\Database\MySQLi\Connection.php(306): mysqli->query('DELETE FROM `mi...', 0)
+#1 C:\laragon\www\backend\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('DELETE FROM `mi...')
+#2 C:\laragon\www\backend\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('DELETE FROM `mi...')
+#3 C:\laragon\www\backend\system\Database\BaseBuilder.php(2790): CodeIgniter\Database\BaseConnection->query('DELETE FROM `mi...', Array, false)
+#4 C:\laragon\www\backend\system\Model.php(445): CodeIgniter\Database\BaseBuilder->delete()
+#5 C:\laragon\www\backend\system\BaseModel.php(1080): CodeIgniter\Model->doDelete(Array, false)
+#6 C:\laragon\www\backend\app\Controllers\MainController.php(90): CodeIgniter\BaseModel->delete(Array)
+#7 C:\laragon\www\backend\system\CodeIgniter.php(919): App\Controllers\MainController->deleteBeneficiary('1084964')
+#8 C:\laragon\www\backend\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MainController))
+#9 C:\laragon\www\backend\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\laragon\www\backend\public\index.php(85): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2023-12-09 05:43:51 --> Unknown column 'id' in 'where clause'
+in SYSTEMPATH\Database\BaseConnection.php on line 646.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2790): CodeIgniter\Database\BaseConnection->query('DELETE FROM `minsu_victoria_roster_list_as_of_october_2023`
+WHERE `id` IN :id:', [...], false)
+ 2 SYSTEMPATH\Model.php(445): CodeIgniter\Database\BaseBuilder->delete()
+ 3 SYSTEMPATH\BaseModel.php(1080): CodeIgniter\Model->doDelete([...], false)
+ 4 APPPATH\Controllers\MainController.php(90): CodeIgniter\BaseModel->delete([...])
+ 5 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\MainController->deleteBeneficiary('1084964')
+ 6 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MainController))
+ 7 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(85): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-12-09 05:45:00 --> mysqli_sql_exception: Unknown column 'id' in 'where clause' in C:\laragon\www\backend\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\laragon\www\backend\system\Database\MySQLi\Connection.php(306): mysqli->query('DELETE FROM `mi...', 0)
+#1 C:\laragon\www\backend\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('DELETE FROM `mi...')
+#2 C:\laragon\www\backend\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('DELETE FROM `mi...')
+#3 C:\laragon\www\backend\system\Database\BaseBuilder.php(2790): CodeIgniter\Database\BaseConnection->query('DELETE FROM `mi...', Array, false)
+#4 C:\laragon\www\backend\system\Model.php(445): CodeIgniter\Database\BaseBuilder->delete()
+#5 C:\laragon\www\backend\system\BaseModel.php(1080): CodeIgniter\Model->doDelete(Array, false)
+#6 C:\laragon\www\backend\app\Controllers\MainController.php(90): CodeIgniter\BaseModel->delete(Array)
+#7 C:\laragon\www\backend\system\CodeIgniter.php(919): App\Controllers\MainController->deleteBeneficiary('1084884')
+#8 C:\laragon\www\backend\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MainController))
+#9 C:\laragon\www\backend\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\laragon\www\backend\public\index.php(85): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2023-12-09 05:45:00 --> Unknown column 'id' in 'where clause'
+in SYSTEMPATH\Database\BaseConnection.php on line 646.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2790): CodeIgniter\Database\BaseConnection->query('DELETE FROM `minsu_victoria_roster_list_as_of_october_2023`
+WHERE `id` IN :id:', [...], false)
+ 2 SYSTEMPATH\Model.php(445): CodeIgniter\Database\BaseBuilder->delete()
+ 3 SYSTEMPATH\BaseModel.php(1080): CodeIgniter\Model->doDelete([...], false)
+ 4 APPPATH\Controllers\MainController.php(90): CodeIgniter\BaseModel->delete([...])
+ 5 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\MainController->deleteBeneficiary('1084884')
+ 6 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MainController))
+ 7 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(85): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-12-09 05:45:28 --> mysqli_sql_exception: Unknown column 'id' in 'where clause' in C:\laragon\www\backend\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\laragon\www\backend\system\Database\MySQLi\Connection.php(306): mysqli->query('DELETE FROM `mi...', 0)
+#1 C:\laragon\www\backend\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('DELETE FROM `mi...')
+#2 C:\laragon\www\backend\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('DELETE FROM `mi...')
+#3 C:\laragon\www\backend\system\Database\BaseBuilder.php(2790): CodeIgniter\Database\BaseConnection->query('DELETE FROM `mi...', Array, false)
+#4 C:\laragon\www\backend\system\Model.php(445): CodeIgniter\Database\BaseBuilder->delete()
+#5 C:\laragon\www\backend\system\BaseModel.php(1080): CodeIgniter\Model->doDelete(Array, false)
+#6 C:\laragon\www\backend\app\Controllers\MainController.php(90): CodeIgniter\BaseModel->delete(Array)
+#7 C:\laragon\www\backend\system\CodeIgniter.php(919): App\Controllers\MainController->deleteBeneficiary('1084788')
+#8 C:\laragon\www\backend\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MainController))
+#9 C:\laragon\www\backend\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\laragon\www\backend\public\index.php(85): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2023-12-09 05:45:28 --> Unknown column 'id' in 'where clause'
+in SYSTEMPATH\Database\BaseConnection.php on line 646.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2790): CodeIgniter\Database\BaseConnection->query('DELETE FROM `minsu_victoria_roster_list_as_of_october_2023`
+WHERE `id` IN :id:', [...], false)
+ 2 SYSTEMPATH\Model.php(445): CodeIgniter\Database\BaseBuilder->delete()
+ 3 SYSTEMPATH\BaseModel.php(1080): CodeIgniter\Model->doDelete([...], false)
+ 4 APPPATH\Controllers\MainController.php(90): CodeIgniter\BaseModel->delete([...])
+ 5 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\MainController->deleteBeneficiary('1084788')
+ 6 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MainController))
+ 7 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(85): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-09 05:47:15 --> Too few arguments to function App\Controllers\MainController::deleteBeneficiary(), 0 passed in C:\laragon\www\backend\system\CodeIgniter.php on line 919 and exactly 1 expected
+in APPPATH\Controllers\MainController.php on line 87.
+ 1 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\MainController->deleteBeneficiary()
+ 2 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MainController))
+ 3 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(85): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-12-09 05:47:22 --> mysqli_sql_exception: Unknown column 'id' in 'where clause' in C:\laragon\www\backend\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\laragon\www\backend\system\Database\MySQLi\Connection.php(306): mysqli->query('DELETE FROM `mi...', 0)
+#1 C:\laragon\www\backend\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('DELETE FROM `mi...')
+#2 C:\laragon\www\backend\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('DELETE FROM `mi...')
+#3 C:\laragon\www\backend\system\Database\BaseBuilder.php(2790): CodeIgniter\Database\BaseConnection->query('DELETE FROM `mi...', Array, false)
+#4 C:\laragon\www\backend\system\Model.php(445): CodeIgniter\Database\BaseBuilder->delete()
+#5 C:\laragon\www\backend\system\BaseModel.php(1080): CodeIgniter\Model->doDelete(Array, false)
+#6 C:\laragon\www\backend\app\Controllers\MainController.php(90): CodeIgniter\BaseModel->delete(Array)
+#7 C:\laragon\www\backend\system\CodeIgniter.php(919): App\Controllers\MainController->deleteBeneficiary('1084788')
+#8 C:\laragon\www\backend\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MainController))
+#9 C:\laragon\www\backend\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\laragon\www\backend\public\index.php(85): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2023-12-09 05:47:22 --> Unknown column 'id' in 'where clause'
+in SYSTEMPATH\Database\BaseConnection.php on line 646.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2790): CodeIgniter\Database\BaseConnection->query('DELETE FROM `minsu_victoria_roster_list_as_of_october_2023`
+WHERE `id` IN :id:', [...], false)
+ 2 SYSTEMPATH\Model.php(445): CodeIgniter\Database\BaseBuilder->delete()
+ 3 SYSTEMPATH\BaseModel.php(1080): CodeIgniter\Model->doDelete([...], false)
+ 4 APPPATH\Controllers\MainController.php(90): CodeIgniter\BaseModel->delete([...])
+ 5 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\MainController->deleteBeneficiary('1084788')
+ 6 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MainController))
+ 7 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(85): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-12-09 05:48:04 --> mysqli_sql_exception: Unknown column 'id' in 'where clause' in C:\laragon\www\backend\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\laragon\www\backend\system\Database\MySQLi\Connection.php(306): mysqli->query('DELETE FROM `mi...', 0)
+#1 C:\laragon\www\backend\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('DELETE FROM `mi...')
+#2 C:\laragon\www\backend\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('DELETE FROM `mi...')
+#3 C:\laragon\www\backend\system\Database\BaseBuilder.php(2790): CodeIgniter\Database\BaseConnection->query('DELETE FROM `mi...', Array, false)
+#4 C:\laragon\www\backend\system\Model.php(445): CodeIgniter\Database\BaseBuilder->delete()
+#5 C:\laragon\www\backend\system\BaseModel.php(1080): CodeIgniter\Model->doDelete(Array, false)
+#6 C:\laragon\www\backend\app\Controllers\MainController.php(90): CodeIgniter\BaseModel->delete(Array)
+#7 C:\laragon\www\backend\system\CodeIgniter.php(919): App\Controllers\MainController->deleteBeneficiary('1084788')
+#8 C:\laragon\www\backend\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MainController))
+#9 C:\laragon\www\backend\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\laragon\www\backend\public\index.php(85): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2023-12-09 05:48:04 --> Unknown column 'id' in 'where clause'
+in SYSTEMPATH\Database\BaseConnection.php on line 646.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2790): CodeIgniter\Database\BaseConnection->query('DELETE FROM `minsu_victoria_roster_list_as_of_october_2023`
+WHERE `id` IN :id:', [...], false)
+ 2 SYSTEMPATH\Model.php(445): CodeIgniter\Database\BaseBuilder->delete()
+ 3 SYSTEMPATH\BaseModel.php(1080): CodeIgniter\Model->doDelete([...], false)
+ 4 APPPATH\Controllers\MainController.php(90): CodeIgniter\BaseModel->delete([...])
+ 5 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\MainController->deleteBeneficiary('1084788')
+ 6 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MainController))
+ 7 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(85): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-12-09 05:49:13 --> mysqli_sql_exception: Unknown column 'id' in 'where clause' in C:\laragon\www\backend\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\laragon\www\backend\system\Database\MySQLi\Connection.php(306): mysqli->query('DELETE FROM `mi...', 0)
+#1 C:\laragon\www\backend\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('DELETE FROM `mi...')
+#2 C:\laragon\www\backend\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('DELETE FROM `mi...')
+#3 C:\laragon\www\backend\system\Database\BaseBuilder.php(2790): CodeIgniter\Database\BaseConnection->query('DELETE FROM `mi...', Array, false)
+#4 C:\laragon\www\backend\system\Model.php(445): CodeIgniter\Database\BaseBuilder->delete()
+#5 C:\laragon\www\backend\system\BaseModel.php(1080): CodeIgniter\Model->doDelete(Array, false)
+#6 C:\laragon\www\backend\app\Controllers\MainController.php(90): CodeIgniter\BaseModel->delete(Array)
+#7 C:\laragon\www\backend\system\CodeIgniter.php(919): App\Controllers\MainController->deleteBeneficiary('1084788')
+#8 C:\laragon\www\backend\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MainController))
+#9 C:\laragon\www\backend\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\laragon\www\backend\public\index.php(85): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2023-12-09 05:49:13 --> Unknown column 'id' in 'where clause'
+in SYSTEMPATH\Database\BaseConnection.php on line 646.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2790): CodeIgniter\Database\BaseConnection->query('DELETE FROM `minsu_victoria_roster_list_as_of_october_2023`
+WHERE `id` IN :id:', [...], false)
+ 2 SYSTEMPATH\Model.php(445): CodeIgniter\Database\BaseBuilder->delete()
+ 3 SYSTEMPATH\BaseModel.php(1080): CodeIgniter\Model->doDelete([...], false)
+ 4 APPPATH\Controllers\MainController.php(90): CodeIgniter\BaseModel->delete([...])
+ 5 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\MainController->deleteBeneficiary('1084788')
+ 6 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MainController))
+ 7 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(85): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-12-09 05:49:16 --> mysqli_sql_exception: Unknown column 'id' in 'where clause' in C:\laragon\www\backend\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\laragon\www\backend\system\Database\MySQLi\Connection.php(306): mysqli->query('DELETE FROM `mi...', 0)
+#1 C:\laragon\www\backend\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('DELETE FROM `mi...')
+#2 C:\laragon\www\backend\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('DELETE FROM `mi...')
+#3 C:\laragon\www\backend\system\Database\BaseBuilder.php(2790): CodeIgniter\Database\BaseConnection->query('DELETE FROM `mi...', Array, false)
+#4 C:\laragon\www\backend\system\Model.php(445): CodeIgniter\Database\BaseBuilder->delete()
+#5 C:\laragon\www\backend\system\BaseModel.php(1080): CodeIgniter\Model->doDelete(Array, false)
+#6 C:\laragon\www\backend\app\Controllers\MainController.php(90): CodeIgniter\BaseModel->delete(Array)
+#7 C:\laragon\www\backend\system\CodeIgniter.php(919): App\Controllers\MainController->deleteBeneficiary('1084788')
+#8 C:\laragon\www\backend\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MainController))
+#9 C:\laragon\www\backend\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\laragon\www\backend\public\index.php(85): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2023-12-09 05:49:16 --> Unknown column 'id' in 'where clause'
+in SYSTEMPATH\Database\BaseConnection.php on line 646.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2790): CodeIgniter\Database\BaseConnection->query('DELETE FROM `minsu_victoria_roster_list_as_of_october_2023`
+WHERE `id` IN :id:', [...], false)
+ 2 SYSTEMPATH\Model.php(445): CodeIgniter\Database\BaseBuilder->delete()
+ 3 SYSTEMPATH\BaseModel.php(1080): CodeIgniter\Model->doDelete([...], false)
+ 4 APPPATH\Controllers\MainController.php(90): CodeIgniter\BaseModel->delete([...])
+ 5 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\MainController->deleteBeneficiary('1084788')
+ 6 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MainController))
+ 7 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(85): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-12-09 05:49:23 --> mysqli_sql_exception: Unknown column 'id' in 'where clause' in C:\laragon\www\backend\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\laragon\www\backend\system\Database\MySQLi\Connection.php(306): mysqli->query('DELETE FROM `mi...', 0)
+#1 C:\laragon\www\backend\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('DELETE FROM `mi...')
+#2 C:\laragon\www\backend\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('DELETE FROM `mi...')
+#3 C:\laragon\www\backend\system\Database\BaseBuilder.php(2790): CodeIgniter\Database\BaseConnection->query('DELETE FROM `mi...', Array, false)
+#4 C:\laragon\www\backend\system\Model.php(445): CodeIgniter\Database\BaseBuilder->delete()
+#5 C:\laragon\www\backend\system\BaseModel.php(1080): CodeIgniter\Model->doDelete(Array, false)
+#6 C:\laragon\www\backend\app\Controllers\MainController.php(90): CodeIgniter\BaseModel->delete(Array)
+#7 C:\laragon\www\backend\system\CodeIgniter.php(919): App\Controllers\MainController->deleteBeneficiary('1084788')
+#8 C:\laragon\www\backend\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MainController))
+#9 C:\laragon\www\backend\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\laragon\www\backend\public\index.php(85): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2023-12-09 05:49:23 --> Unknown column 'id' in 'where clause'
+in SYSTEMPATH\Database\BaseConnection.php on line 646.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2790): CodeIgniter\Database\BaseConnection->query('DELETE FROM `minsu_victoria_roster_list_as_of_october_2023`
+WHERE `id` IN :id:', [...], false)
+ 2 SYSTEMPATH\Model.php(445): CodeIgniter\Database\BaseBuilder->delete()
+ 3 SYSTEMPATH\BaseModel.php(1080): CodeIgniter\Model->doDelete([...], false)
+ 4 APPPATH\Controllers\MainController.php(90): CodeIgniter\BaseModel->delete([...])
+ 5 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\MainController->deleteBeneficiary('1084788')
+ 6 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MainController))
+ 7 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(85): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-09 05:50:40 --> "App\Models\MainModel" model class does not specify a Primary Key.
+in SYSTEMPATH\Model.php on line 625.
+ 1 SYSTEMPATH\Model.php(625): CodeIgniter\Exceptions\ModelException::forNoPrimaryKey('App\\Models\\MainModel')
+ 2 SYSTEMPATH\Model.php(421): CodeIgniter\Model->builder()
+ 3 SYSTEMPATH\BaseModel.php(1080): CodeIgniter\Model->doDelete([...], false)
+ 4 APPPATH\Controllers\MainController.php(90): CodeIgniter\BaseModel->delete([...])
+ 5 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\MainController->deleteBeneficiary('1084788')
+ 6 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MainController))
+ 7 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(85): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-09 05:55:42 --> "App\Models\MainModel" model class does not specify a Primary Key.
+in SYSTEMPATH\Model.php on line 625.
+ 1 SYSTEMPATH\Model.php(625): CodeIgniter\Exceptions\ModelException::forNoPrimaryKey('App\\Models\\MainModel')
+ 2 SYSTEMPATH\Model.php(421): CodeIgniter\Model->builder()
+ 3 SYSTEMPATH\BaseModel.php(1080): CodeIgniter\Model->doDelete([...], false)
+ 4 APPPATH\Controllers\MainController.php(90): CodeIgniter\BaseModel->delete([...])
+ 5 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\MainController->deleteBeneficiary('1084788')
+ 6 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MainController))
+ 7 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(85): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-12-09 05:55:49 --> mysqli_sql_exception: Cannot delete or update a parent row: a foreign key constraint fails (`dswd`.`encoder`, CONSTRAINT `fk_encoder_minsu_victoria_roster_list_as_of_october_2023` FOREIGN KEY (`ENTRY_ID`) REFERENCES `minsu_victoria_roster_list_as_of_october_2023` (`ENTRY_ID`)) in C:\laragon\www\backend\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\laragon\www\backend\system\Database\MySQLi\Connection.php(306): mysqli->query('DELETE FROM `mi...', 0)
+#1 C:\laragon\www\backend\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('DELETE FROM `mi...')
+#2 C:\laragon\www\backend\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('DELETE FROM `mi...')
+#3 C:\laragon\www\backend\system\Database\BaseBuilder.php(2790): CodeIgniter\Database\BaseConnection->query('DELETE FROM `mi...', Array, false)
+#4 C:\laragon\www\backend\system\Model.php(445): CodeIgniter\Database\BaseBuilder->delete()
+#5 C:\laragon\www\backend\system\BaseModel.php(1080): CodeIgniter\Model->doDelete(Array, false)
+#6 C:\laragon\www\backend\app\Controllers\MainController.php(90): CodeIgniter\BaseModel->delete(Array)
+#7 C:\laragon\www\backend\system\CodeIgniter.php(919): App\Controllers\MainController->deleteBeneficiary('1084788')
+#8 C:\laragon\www\backend\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MainController))
+#9 C:\laragon\www\backend\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\laragon\www\backend\public\index.php(85): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2023-12-09 05:55:49 --> Cannot delete or update a parent row: a foreign key constraint fails (`dswd`.`encoder`, CONSTRAINT `fk_encoder_minsu_victoria_roster_list_as_of_october_2023` FOREIGN KEY (`ENTRY_ID`) REFERENCES `minsu_victoria_roster_list_as_of_october_2023` (`ENTRY_ID`))
+in SYSTEMPATH\Database\BaseConnection.php on line 646.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2790): CodeIgniter\Database\BaseConnection->query('DELETE FROM `minsu_victoria_roster_list_as_of_october_2023`
+WHERE `ENTRY_ID` IN :ENTRY_ID:', [...], false)
+ 2 SYSTEMPATH\Model.php(445): CodeIgniter\Database\BaseBuilder->delete()
+ 3 SYSTEMPATH\BaseModel.php(1080): CodeIgniter\Model->doDelete([...], false)
+ 4 APPPATH\Controllers\MainController.php(90): CodeIgniter\BaseModel->delete([...])
+ 5 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\MainController->deleteBeneficiary('1084788')
+ 6 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MainController))
+ 7 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(85): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-09 06:26:37 --> There is no data to insert.
+in SYSTEMPATH\BaseModel.php on line 1724.
+ 1 SYSTEMPATH\BaseModel.php(1724): CodeIgniter\Database\Exceptions\DataException::forEmptyDataset('insert')
+ 2 SYSTEMPATH\BaseModel.php(748): CodeIgniter\BaseModel->transformDataToArray(null, 'insert')
+ 3 SYSTEMPATH\Model.php(715): CodeIgniter\BaseModel->insert(null, true)
+ 4 APPPATH\Controllers\MainController.php(103): CodeIgniter\Model->insert(null)
+ 5 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\MainController->deleteBeneficiary('1084788')
+ 6 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MainController))
+ 7 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(85): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-09 08:53:58 --> There is no data to update.
+in SYSTEMPATH\BaseModel.php on line 930.
+ 1 SYSTEMPATH\BaseModel.php(930): CodeIgniter\Database\Exceptions\DataException::forEmptyDataset('update')
+ 2 SYSTEMPATH\Model.php(776): CodeIgniter\BaseModel->update([...], [])
+ 3 APPPATH\Controllers\MainController.php(272): CodeIgniter\Model->update('1127947', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\MainController->updateBeneficiary('1127947')
+ 5 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MainController))
+ 6 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(85): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-09 08:54:49 --> There is no data to update.
+in SYSTEMPATH\BaseModel.php on line 930.
+ 1 SYSTEMPATH\BaseModel.php(930): CodeIgniter\Database\Exceptions\DataException::forEmptyDataset('update')
+ 2 SYSTEMPATH\Model.php(776): CodeIgniter\BaseModel->update([...], [])
+ 3 APPPATH\Controllers\MainController.php(272): CodeIgniter\Model->update('1127947', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\MainController->updateBeneficiary('1127947')
+ 5 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MainController))
+ 6 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(85): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-09 09:11:25 --> Undefined variable $1
+in APPPATH\Controllers\MainController.php on line 274.
+ 1 APPPATH\Controllers\MainController.php(274): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $1', 'C:\\laragon\\www\\backend\\app\\Controllers\\MainController.php', 274)
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\MainController->updateBeneficiary('1128001')
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MainController))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(85): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-09 09:11:52 --> Undefined variable $1
+in APPPATH\Controllers\MainController.php on line 274.
+ 1 APPPATH\Controllers\MainController.php(274): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $1', 'C:\\laragon\\www\\backend\\app\\Controllers\\MainController.php', 274)
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\MainController->updateBeneficiary('1127947')
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MainController))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(85): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-09 09:27:50 --> Object of type stdClass is not callable
+in APPPATH\Controllers\MainController.php on line 260.
+ 1 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\MainController->updateBeneficiary('1128001')
+ 2 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MainController))
+ 3 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(85): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-09 09:28:15 --> Value of type null is not callable
+in APPPATH\Controllers\MainController.php on line 260.
+ 1 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\MainController->updateBeneficiary('1127947')
+ 2 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MainController))
+ 3 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(85): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-09 13:52:00 --> Attempt to read property "insert_id" on bool
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 588.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(588): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "insert_id" on bool', 'C:\\laragon\\www\\backend\\system\\Database\\MySQLi\\Connection.php', 588)
+ 2 SYSTEMPATH\Model.php(867): CodeIgniter\Database\MySQLi\Connection->insertID()
+ 3 APPPATH\Controllers\MainController.php(300): CodeIgniter\Model->__call('insertID', [])
+ 4 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\MainController->addBeneficiary()
+ 5 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MainController))
+ 6 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(85): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-09 13:52:43 --> Attempt to read property "insert_id" on bool
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 588.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(588): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "insert_id" on bool', 'C:\\laragon\\www\\backend\\system\\Database\\MySQLi\\Connection.php', 588)
+ 2 SYSTEMPATH\Model.php(867): CodeIgniter\Database\MySQLi\Connection->insertID()
+ 3 APPPATH\Controllers\MainController.php(300): CodeIgniter\Model->__call('insertID', [])
+ 4 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\MainController->addBeneficiary()
+ 5 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MainController))
+ 6 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(85): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-09 13:56:33 --> Attempt to read property "insert_id" on bool
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 588.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(588): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "insert_id" on bool', 'C:\\laragon\\www\\backend\\system\\Database\\MySQLi\\Connection.php', 588)
+ 2 SYSTEMPATH\Model.php(867): CodeIgniter\Database\MySQLi\Connection->insertID()
+ 3 APPPATH\Controllers\MainController.php(300): CodeIgniter\Model->__call('insertID', [])
+ 4 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\MainController->addBeneficiary()
+ 5 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MainController))
+ 6 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(85): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-09 13:56:49 --> Attempt to read property "insert_id" on bool
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 588.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(588): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "insert_id" on bool', 'C:\\laragon\\www\\backend\\system\\Database\\MySQLi\\Connection.php', 588)
+ 2 SYSTEMPATH\Model.php(867): CodeIgniter\Database\MySQLi\Connection->insertID()
+ 3 APPPATH\Controllers\MainController.php(300): CodeIgniter\Model->__call('insertID', [])
+ 4 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\MainController->addBeneficiary()
+ 5 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MainController))
+ 6 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(85): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-09 13:58:14 --> implode(): Argument #1 ($pieces) must be of type array, string given
+in APPPATH\Controllers\MainController.php on line 353.
+ 1 APPPATH\Controllers\MainController.php(353): implode(', ', null)
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\MainController->insert()
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MainController))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(85): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-09 13:58:24 --> Attempt to read property "insert_id" on bool
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 588.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(588): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "insert_id" on bool', 'C:\\laragon\\www\\backend\\system\\Database\\MySQLi\\Connection.php', 588)
+ 2 SYSTEMPATH\Model.php(867): CodeIgniter\Database\MySQLi\Connection->insertID()
+ 3 APPPATH\Controllers\MainController.php(300): CodeIgniter\Model->__call('insertID', [])
+ 4 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\MainController->addBeneficiary()
+ 5 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MainController))
+ 6 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(85): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-09 14:03:07 --> Attempt to read property "insert_id" on bool
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 588.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(588): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "insert_id" on bool', 'C:\\laragon\\www\\backend\\system\\Database\\MySQLi\\Connection.php', 588)
+ 2 SYSTEMPATH\Model.php(867): CodeIgniter\Database\MySQLi\Connection->insertID()
+ 3 APPPATH\Controllers\MainController.php(300): CodeIgniter\Model->__call('insertID', [])
+ 4 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\MainController->addBeneficiary()
+ 5 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MainController))
+ 6 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(85): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-09 14:06:40 --> Attempt to read property "insert_id" on bool
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 588.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(588): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "insert_id" on bool', 'C:\\laragon\\www\\backend\\system\\Database\\MySQLi\\Connection.php', 588)
+ 2 SYSTEMPATH\Model.php(867): CodeIgniter\Database\MySQLi\Connection->insertID()
+ 3 APPPATH\Controllers\MainController.php(300): CodeIgniter\Model->__call('insertID', [])
+ 4 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\MainController->addBeneficiary()
+ 5 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MainController))
+ 6 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(85): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-09 14:07:48 --> Attempt to read property "insert_id" on bool
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 588.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(588): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "insert_id" on bool', 'C:\\laragon\\www\\backend\\system\\Database\\MySQLi\\Connection.php', 588)
+ 2 SYSTEMPATH\Model.php(867): CodeIgniter\Database\MySQLi\Connection->insertID()
+ 3 APPPATH\Controllers\MainController.php(300): CodeIgniter\Model->__call('insertID', [])
+ 4 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\MainController->addBeneficiary()
+ 5 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MainController))
+ 6 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(85): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-09 14:08:27 --> Attempt to read property "insert_id" on bool
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 588.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(588): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "insert_id" on bool', 'C:\\laragon\\www\\backend\\system\\Database\\MySQLi\\Connection.php', 588)
+ 2 SYSTEMPATH\Model.php(867): CodeIgniter\Database\MySQLi\Connection->insertID()
+ 3 APPPATH\Controllers\MainController.php(300): CodeIgniter\Model->__call('insertID', [])
+ 4 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\MainController->addBeneficiary()
+ 5 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MainController))
+ 6 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(85): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-09 14:09:23 --> Attempt to read property "insert_id" on bool
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 588.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(588): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "insert_id" on bool', 'C:\\laragon\\www\\backend\\system\\Database\\MySQLi\\Connection.php', 588)
+ 2 SYSTEMPATH\Model.php(867): CodeIgniter\Database\MySQLi\Connection->insertID()
+ 3 APPPATH\Controllers\MainController.php(300): CodeIgniter\Model->__call('insertID', [])
+ 4 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\MainController->addBeneficiary()
+ 5 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MainController))
+ 6 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(85): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-09 14:10:17 --> Attempt to read property "insert_id" on bool
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 588.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(588): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "insert_id" on bool', 'C:\\laragon\\www\\backend\\system\\Database\\MySQLi\\Connection.php', 588)
+ 2 SYSTEMPATH\Model.php(867): CodeIgniter\Database\MySQLi\Connection->insertID()
+ 3 APPPATH\Controllers\MainController.php(300): CodeIgniter\Model->__call('insertID', [])
+ 4 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\MainController->addBeneficiary()
+ 5 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MainController))
+ 6 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(85): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-09 14:10:20 --> Attempt to read property "insert_id" on bool
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 588.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(588): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "insert_id" on bool', 'C:\\laragon\\www\\backend\\system\\Database\\MySQLi\\Connection.php', 588)
+ 2 SYSTEMPATH\Model.php(867): CodeIgniter\Database\MySQLi\Connection->insertID()
+ 3 APPPATH\Controllers\MainController.php(300): CodeIgniter\Model->__call('insertID', [])
+ 4 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\MainController->addBeneficiary()
+ 5 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MainController))
+ 6 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(85): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-12-09 14:40:04 --> mysqli_sql_exception: Duplicate entry '2147483647' for key 'minsu_victoria_roster_list_as_of_october_2023.idx_entry_id' in C:\laragon\www\backend\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\laragon\www\backend\system\Database\MySQLi\Connection.php(306): mysqli->query('INSERT INTO `mi...', 0)
+#1 C:\laragon\www\backend\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `mi...')
+#2 C:\laragon\www\backend\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `mi...')
+#3 C:\laragon\www\backend\system\Database\BaseBuilder.php(2308): CodeIgniter\Database\BaseConnection->query('INSERT INTO `mi...', Array, false)
+#4 C:\laragon\www\backend\system\Model.php(319): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\laragon\www\backend\system\BaseModel.php(788): CodeIgniter\Model->doInsert(Array)
+#6 C:\laragon\www\backend\system\Model.php(715): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\laragon\www\backend\app\Controllers\MainController.php(336): CodeIgniter\Model->insert(Array)
+#8 C:\laragon\www\backend\system\CodeIgniter.php(919): App\Controllers\MainController->addBeneficiary()
+#9 C:\laragon\www\backend\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MainController))
+#10 C:\laragon\www\backend\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\laragon\www\backend\public\index.php(85): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2023-12-09 14:40:04 --> Duplicate entry '2147483647' for key 'minsu_victoria_roster_list_as_of_october_2023.idx_entry_id'
+in SYSTEMPATH\Database\BaseConnection.php on line 646.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2308): CodeIgniter\Database\BaseConnection->query('INSERT INTO `minsu_victoria_roster_list_as_of_october_2023` (`REGION`, `PROVINCE`, `MUNICIPALITY`, `BRGY`, `HH_ID`, `ENTRY_ID`, `FIRST_NAME`, `MIDDLE_NAME`, `LAST_NAME`, `AGE`, `SEX`, `GRANTEE`) VALUES (:REGION:, :PROVINCE:, :MUNICIPALITY:, :BRGY:, :HH_ID:, :ENTRY_ID:, :FIRST_NAME:, :MIDDLE_NAME:, :LAST_NAME:, :AGE:, :SEX:, :GRANTEE:)', [...], false)
+ 2 SYSTEMPATH\Model.php(319): CodeIgniter\Database\BaseBuilder->insert()
+ 3 SYSTEMPATH\BaseModel.php(788): CodeIgniter\Model->doInsert([...])
+ 4 SYSTEMPATH\Model.php(715): CodeIgniter\BaseModel->insert([...], true)
+ 5 APPPATH\Controllers\MainController.php(336): CodeIgniter\Model->insert([...])
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\MainController->addBeneficiary()
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MainController))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(85): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-12-09 14:40:12 --> mysqli_sql_exception: Duplicate entry '2147483647' for key 'minsu_victoria_roster_list_as_of_october_2023.idx_entry_id' in C:\laragon\www\backend\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\laragon\www\backend\system\Database\MySQLi\Connection.php(306): mysqli->query('INSERT INTO `mi...', 0)
+#1 C:\laragon\www\backend\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `mi...')
+#2 C:\laragon\www\backend\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `mi...')
+#3 C:\laragon\www\backend\system\Database\BaseBuilder.php(2308): CodeIgniter\Database\BaseConnection->query('INSERT INTO `mi...', Array, false)
+#4 C:\laragon\www\backend\system\Model.php(319): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\laragon\www\backend\system\BaseModel.php(788): CodeIgniter\Model->doInsert(Array)
+#6 C:\laragon\www\backend\system\Model.php(715): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\laragon\www\backend\app\Controllers\MainController.php(336): CodeIgniter\Model->insert(Array)
+#8 C:\laragon\www\backend\system\CodeIgniter.php(919): App\Controllers\MainController->addBeneficiary()
+#9 C:\laragon\www\backend\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MainController))
+#10 C:\laragon\www\backend\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\laragon\www\backend\public\index.php(85): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2023-12-09 14:40:12 --> Duplicate entry '2147483647' for key 'minsu_victoria_roster_list_as_of_october_2023.idx_entry_id'
+in SYSTEMPATH\Database\BaseConnection.php on line 646.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2308): CodeIgniter\Database\BaseConnection->query('INSERT INTO `minsu_victoria_roster_list_as_of_october_2023` (`REGION`, `PROVINCE`, `MUNICIPALITY`, `BRGY`, `HH_ID`, `ENTRY_ID`, `FIRST_NAME`, `MIDDLE_NAME`, `LAST_NAME`, `AGE`, `SEX`, `GRANTEE`) VALUES (:REGION:, :PROVINCE:, :MUNICIPALITY:, :BRGY:, :HH_ID:, :ENTRY_ID:, :FIRST_NAME:, :MIDDLE_NAME:, :LAST_NAME:, :AGE:, :SEX:, :GRANTEE:)', [...], false)
+ 2 SYSTEMPATH\Model.php(319): CodeIgniter\Database\BaseBuilder->insert()
+ 3 SYSTEMPATH\BaseModel.php(788): CodeIgniter\Model->doInsert([...])
+ 4 SYSTEMPATH\Model.php(715): CodeIgniter\BaseModel->insert([...], true)
+ 5 APPPATH\Controllers\MainController.php(336): CodeIgniter\Model->insert([...])
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\MainController->addBeneficiary()
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MainController))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(85): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-12-09 14:40:58 --> mysqli_sql_exception: Duplicate entry '2147483647' for key 'minsu_victoria_roster_list_as_of_october_2023.idx_entry_id' in C:\laragon\www\backend\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\laragon\www\backend\system\Database\MySQLi\Connection.php(306): mysqli->query('INSERT INTO `mi...', 0)
+#1 C:\laragon\www\backend\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `mi...')
+#2 C:\laragon\www\backend\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `mi...')
+#3 C:\laragon\www\backend\system\Database\BaseBuilder.php(2308): CodeIgniter\Database\BaseConnection->query('INSERT INTO `mi...', Array, false)
+#4 C:\laragon\www\backend\system\Model.php(319): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\laragon\www\backend\system\BaseModel.php(788): CodeIgniter\Model->doInsert(Array)
+#6 C:\laragon\www\backend\system\Model.php(715): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\laragon\www\backend\app\Controllers\MainController.php(336): CodeIgniter\Model->insert(Array)
+#8 C:\laragon\www\backend\system\CodeIgniter.php(919): App\Controllers\MainController->addBeneficiary()
+#9 C:\laragon\www\backend\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MainController))
+#10 C:\laragon\www\backend\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\laragon\www\backend\public\index.php(85): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2023-12-09 14:40:58 --> Duplicate entry '2147483647' for key 'minsu_victoria_roster_list_as_of_october_2023.idx_entry_id'
+in SYSTEMPATH\Database\BaseConnection.php on line 646.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2308): CodeIgniter\Database\BaseConnection->query('INSERT INTO `minsu_victoria_roster_list_as_of_october_2023` (`REGION`, `PROVINCE`, `MUNICIPALITY`, `BRGY`, `HH_ID`, `ENTRY_ID`, `FIRST_NAME`, `MIDDLE_NAME`, `LAST_NAME`, `AGE`, `SEX`, `GRANTEE`) VALUES (:REGION:, :PROVINCE:, :MUNICIPALITY:, :BRGY:, :HH_ID:, :ENTRY_ID:, :FIRST_NAME:, :MIDDLE_NAME:, :LAST_NAME:, :AGE:, :SEX:, :GRANTEE:)', [...], false)
+ 2 SYSTEMPATH\Model.php(319): CodeIgniter\Database\BaseBuilder->insert()
+ 3 SYSTEMPATH\BaseModel.php(788): CodeIgniter\Model->doInsert([...])
+ 4 SYSTEMPATH\Model.php(715): CodeIgniter\BaseModel->insert([...], true)
+ 5 APPPATH\Controllers\MainController.php(336): CodeIgniter\Model->insert([...])
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\MainController->addBeneficiary()
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MainController))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(85): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-12-09 14:41:13 --> mysqli_sql_exception: Duplicate entry '2147483647' for key 'minsu_victoria_roster_list_as_of_october_2023.idx_entry_id' in C:\laragon\www\backend\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\laragon\www\backend\system\Database\MySQLi\Connection.php(306): mysqli->query('INSERT INTO `mi...', 0)
+#1 C:\laragon\www\backend\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `mi...')
+#2 C:\laragon\www\backend\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `mi...')
+#3 C:\laragon\www\backend\system\Database\BaseBuilder.php(2308): CodeIgniter\Database\BaseConnection->query('INSERT INTO `mi...', Array, false)
+#4 C:\laragon\www\backend\system\Model.php(319): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\laragon\www\backend\system\BaseModel.php(788): CodeIgniter\Model->doInsert(Array)
+#6 C:\laragon\www\backend\system\Model.php(715): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\laragon\www\backend\app\Controllers\MainController.php(336): CodeIgniter\Model->insert(Array)
+#8 C:\laragon\www\backend\system\CodeIgniter.php(919): App\Controllers\MainController->addBeneficiary()
+#9 C:\laragon\www\backend\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MainController))
+#10 C:\laragon\www\backend\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\laragon\www\backend\public\index.php(85): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2023-12-09 14:41:13 --> Duplicate entry '2147483647' for key 'minsu_victoria_roster_list_as_of_october_2023.idx_entry_id'
+in SYSTEMPATH\Database\BaseConnection.php on line 646.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2308): CodeIgniter\Database\BaseConnection->query('INSERT INTO `minsu_victoria_roster_list_as_of_october_2023` (`REGION`, `PROVINCE`, `MUNICIPALITY`, `BRGY`, `HH_ID`, `ENTRY_ID`, `FIRST_NAME`, `MIDDLE_NAME`, `LAST_NAME`, `AGE`, `SEX`, `GRANTEE`) VALUES (:REGION:, :PROVINCE:, :MUNICIPALITY:, :BRGY:, :HH_ID:, :ENTRY_ID:, :FIRST_NAME:, :MIDDLE_NAME:, :LAST_NAME:, :AGE:, :SEX:, :GRANTEE:)', [...], false)
+ 2 SYSTEMPATH\Model.php(319): CodeIgniter\Database\BaseBuilder->insert()
+ 3 SYSTEMPATH\BaseModel.php(788): CodeIgniter\Model->doInsert([...])
+ 4 SYSTEMPATH\Model.php(715): CodeIgniter\BaseModel->insert([...], true)
+ 5 APPPATH\Controllers\MainController.php(336): CodeIgniter\Model->insert([...])
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\MainController->addBeneficiary()
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MainController))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(85): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-09 14:55:38 --> Attempt to read property "REGION" on null
+in APPPATH\Controllers\MainController.php on line 308.
+ 1 APPPATH\Controllers\MainController.php(308): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "REGION" on null', 'C:\\laragon\\www\\backend\\app\\Controllers\\MainController.php', 308)
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\MainController->addBeneficiary()
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MainController))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(85): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-12-09 14:59:54 --> mysqli_sql_exception: Duplicate entry '2147483647' for key 'minsu_victoria_roster_list_as_of_october_2023.idx_entry_id' in C:\laragon\www\backend\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\laragon\www\backend\system\Database\MySQLi\Connection.php(306): mysqli->query('INSERT INTO `mi...', 0)
+#1 C:\laragon\www\backend\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `mi...')
+#2 C:\laragon\www\backend\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `mi...')
+#3 C:\laragon\www\backend\system\Database\BaseBuilder.php(2308): CodeIgniter\Database\BaseConnection->query('INSERT INTO `mi...', Array, false)
+#4 C:\laragon\www\backend\system\Model.php(319): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\laragon\www\backend\system\BaseModel.php(788): CodeIgniter\Model->doInsert(Array)
+#6 C:\laragon\www\backend\system\Model.php(715): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\laragon\www\backend\app\Controllers\MainController.php(332): CodeIgniter\Model->insert(Array)
+#8 C:\laragon\www\backend\system\CodeIgniter.php(919): App\Controllers\MainController->addBeneficiary()
+#9 C:\laragon\www\backend\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MainController))
+#10 C:\laragon\www\backend\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\laragon\www\backend\public\index.php(85): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2023-12-09 14:59:54 --> Duplicate entry '2147483647' for key 'minsu_victoria_roster_list_as_of_october_2023.idx_entry_id'
+in SYSTEMPATH\Database\BaseConnection.php on line 646.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2308): CodeIgniter\Database\BaseConnection->query('INSERT INTO `minsu_victoria_roster_list_as_of_october_2023` (`REGION`, `PROVINCE`, `MUNICIPALITY`, `BRGY`, `HH_ID`, `ENTRY_ID`, `FIRST_NAME`, `MIDDLE_NAME`, `LAST_NAME`, `AGE`, `SEX`, `GRANTEE`) VALUES (:REGION:, :PROVINCE:, :MUNICIPALITY:, :BRGY:, :HH_ID:, :ENTRY_ID:, :FIRST_NAME:, :MIDDLE_NAME:, :LAST_NAME:, :AGE:, :SEX:, :GRANTEE:)', [...], false)
+ 2 SYSTEMPATH\Model.php(319): CodeIgniter\Database\BaseBuilder->insert()
+ 3 SYSTEMPATH\BaseModel.php(788): CodeIgniter\Model->doInsert([...])
+ 4 SYSTEMPATH\Model.php(715): CodeIgniter\BaseModel->insert([...], true)
+ 5 APPPATH\Controllers\MainController.php(332): CodeIgniter\Model->insert([...])
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\MainController->addBeneficiary()
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MainController))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(85): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-09 15:00:07 --> Attempt to read property "REGION" on null
+in APPPATH\Controllers\MainController.php on line 308.
+ 1 APPPATH\Controllers\MainController.php(308): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "REGION" on null', 'C:\\laragon\\www\\backend\\app\\Controllers\\MainController.php', 308)
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\MainController->addBeneficiary()
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MainController))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(85): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-09 15:06:59 --> Attempt to read property "REGION" on null
+in APPPATH\Controllers\MainController.php on line 308.
+ 1 APPPATH\Controllers\MainController.php(308): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "REGION" on null', 'C:\\laragon\\www\\backend\\app\\Controllers\\MainController.php', 308)
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\MainController->addBeneficiary()
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MainController))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(85): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-09 15:07:33 --> Undefined property: stdClass::$ENTRY_ID
+in APPPATH\Controllers\MainController.php on line 313.
+ 1 APPPATH\Controllers\MainController.php(313): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: stdClass::$ENTRY_ID', 'C:\\laragon\\www\\backend\\app\\Controllers\\MainController.php', 313)
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\MainController->addBeneficiary()
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MainController))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(85): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-09 15:08:09 --> Attempt to read property "REGION" on null
+in APPPATH\Controllers\MainController.php on line 308.
+ 1 APPPATH\Controllers\MainController.php(308): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "REGION" on null', 'C:\\laragon\\www\\backend\\app\\Controllers\\MainController.php', 308)
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\MainController->addBeneficiary()
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MainController))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(85): CodeIgniter\CodeIgniter->run()

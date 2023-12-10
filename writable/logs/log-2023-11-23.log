@@ -1,0 +1,459 @@
+CRITICAL - 2023-11-23 02:32:44 --> Undefined variable $session
+in APPPATH\Controllers\MainController.php on line 235.
+ 1 APPPATH\Controllers\MainController.php(235): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $session', 'C:\\laragon\\www\\backend\\app\\Controllers\\MainController.php', 235)
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\MainController->getName()
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MainController))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(85): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-23 02:36:13 --> Undefined variable $email
+in APPPATH\Controllers\MainController.php on line 234.
+ 1 APPPATH\Controllers\MainController.php(234): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $email', 'C:\\laragon\\www\\backend\\app\\Controllers\\MainController.php', 234)
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\MainController->getName()
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MainController))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(85): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-23 02:36:52 --> Trying to access array offset on value of type null
+in APPPATH\Controllers\MainController.php on line 235.
+ 1 APPPATH\Controllers\MainController.php(235): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'C:\\laragon\\www\\backend\\app\\Controllers\\MainController.php', 235)
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\MainController->getName()
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MainController))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(85): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-23 02:37:25 --> Value of type null is not callable
+in APPPATH\Controllers\MainController.php on line 235.
+ 1 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\MainController->getName()
+ 2 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MainController))
+ 3 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(85): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-23 03:05:38 --> Class "CodeIgniter\Filters\StartSession" not found
+in SYSTEMPATH\Filters\Filters.php on line 173.
+ 1 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\Filters\Filters->run('getName', 'before')
+ 2 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 3 FCPATH\index.php(85): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-23 03:06:02 --> Class "Config\StartSession" not found
+in SYSTEMPATH\Filters\Filters.php on line 173.
+ 1 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\Filters\Filters->run('getName', 'before')
+ 2 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 3 FCPATH\index.php(85): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-23 03:06:56 --> Class "CodeIgniter\Filters\StartSession" not found
+in SYSTEMPATH\Filters\Filters.php on line 173.
+ 1 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\Filters\Filters->run('getName', 'before')
+ 2 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 3 FCPATH\index.php(85): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-23 03:08:21 --> Class "CodeIgniter\Filters\StartSession" not found
+in SYSTEMPATH\Filters\Filters.php on line 173.
+ 1 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\Filters\Filters->run('getName', 'before')
+ 2 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 3 FCPATH\index.php(85): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-23 03:08:52 --> Class "CodeIgniter\Filters\StartSession" not found
+in SYSTEMPATH\Filters\Filters.php on line 173.
+ 1 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\Filters\Filters->run('getName', 'before')
+ 2 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 3 FCPATH\index.php(85): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-23 03:15:26 --> Class "CodeIgniter\Filters\StartSession" not found
+in SYSTEMPATH\Filters\Filters.php on line 173.
+ 1 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\Filters\Filters->run('getName', 'before')
+ 2 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 3 FCPATH\index.php(85): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-23 03:32:29 --> "CodeIgniter\Filters\StartSession" filter must have a matching alias defined.
+in SYSTEMPATH\Filters\Filters.php on line 576.
+ 1 SYSTEMPATH\Filters\Filters.php(576): CodeIgniter\Filters\Exceptions\FilterException::forNoAlias('CodeIgniter\\Filters\\StartSession')
+ 2 SYSTEMPATH\Filters\Filters.php(259): CodeIgniter\Filters\Filters->processAliasesToClass('before')
+ 3 SYSTEMPATH\Filters\Filters.php(170): CodeIgniter\Filters\Filters->initialize('login')
+ 4 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\Filters\Filters->run('login', 'before')
+ 5 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(85): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-23 03:32:45 --> "CodeIgniter\Filters\StartSession" filter must have a matching alias defined.
+in SYSTEMPATH\Filters\Filters.php on line 576.
+ 1 SYSTEMPATH\Filters\Filters.php(576): CodeIgniter\Filters\Exceptions\FilterException::forNoAlias('CodeIgniter\\Filters\\StartSession')
+ 2 SYSTEMPATH\Filters\Filters.php(259): CodeIgniter\Filters\Filters->processAliasesToClass('before')
+ 3 SYSTEMPATH\Filters\Filters.php(170): CodeIgniter\Filters\Filters->initialize('login')
+ 4 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\Filters\Filters->run('login', 'before')
+ 5 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(85): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-23 03:33:12 --> "start" filter must have a matching alias defined.
+in SYSTEMPATH\Filters\Filters.php on line 576.
+ 1 SYSTEMPATH\Filters\Filters.php(576): CodeIgniter\Filters\Exceptions\FilterException::forNoAlias('start')
+ 2 SYSTEMPATH\Filters\Filters.php(259): CodeIgniter\Filters\Filters->processAliasesToClass('before')
+ 3 SYSTEMPATH\Filters\Filters.php(170): CodeIgniter\Filters\Filters->initialize('login')
+ 4 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\Filters\Filters->run('login', 'before')
+ 5 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(85): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-23 03:34:52 --> "CodeIgniter\Filters\StartSession" filter must have a matching alias defined.
+in SYSTEMPATH\Filters\Filters.php on line 576.
+ 1 SYSTEMPATH\Filters\Filters.php(576): CodeIgniter\Filters\Exceptions\FilterException::forNoAlias('CodeIgniter\\Filters\\StartSession')
+ 2 SYSTEMPATH\Filters\Filters.php(259): CodeIgniter\Filters\Filters->processAliasesToClass('before')
+ 3 SYSTEMPATH\Filters\Filters.php(170): CodeIgniter\Filters\Filters->initialize('login')
+ 4 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\Filters\Filters->run('login', 'before')
+ 5 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(85): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-23 03:38:58 --> Undefined constant CodeIgniter\Session\Session::classs
+in SYSTEMPATH\Config\Factories.php on line 215.
+ 1 SYSTEMPATH\Config\Factories.php(165): CodeIgniter\Config\Factories::createInstance('config', 'Config\\Filters', [])
+ 2 SYSTEMPATH\Common.php(217): CodeIgniter\Config\Factories::__callStatic('config', [])
+ 3 SYSTEMPATH\Config\Services.php(290): config('Config\\Filters')
+ 4 SYSTEMPATH\Config\BaseService.php(258): CodeIgniter\Config\Services::filters(null, false)
+ 5 SYSTEMPATH\Config\BaseService.php(199): CodeIgniter\Config\BaseService::__callStatic('filters', [...])
+ 6 SYSTEMPATH\Config\Services.php(287): CodeIgniter\Config\BaseService::getSharedInstance('filters', null)
+ 7 SYSTEMPATH\Config\BaseService.php(258): CodeIgniter\Config\Services::filters()
+ 8 SYSTEMPATH\CodeIgniter.php(448): CodeIgniter\Config\BaseService::__callStatic('filters', [])
+ 9 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(85): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-23 03:39:48 --> The action you requested is not allowed.
+in SYSTEMPATH\Security\Security.php on line 298.
+ 1 SYSTEMPATH\Security\Security.php(298): CodeIgniter\Security\Exceptions\SecurityException::forDisallowedAction()
+ 2 SYSTEMPATH\Filters\CSRF.php(55): CodeIgniter\Security\Security->verify(Object(CodeIgniter\HTTP\IncomingRequest))
+ 3 SYSTEMPATH\Filters\Filters.php(182): CodeIgniter\Filters\CSRF->before(Object(CodeIgniter\HTTP\IncomingRequest), null)
+ 4 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\Filters\Filters->run('login', 'before')
+ 5 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(85): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-23 03:39:50 --> The action you requested is not allowed.
+in SYSTEMPATH\Security\Security.php on line 298.
+ 1 SYSTEMPATH\Security\Security.php(298): CodeIgniter\Security\Exceptions\SecurityException::forDisallowedAction()
+ 2 SYSTEMPATH\Filters\CSRF.php(55): CodeIgniter\Security\Security->verify(Object(CodeIgniter\HTTP\IncomingRequest))
+ 3 SYSTEMPATH\Filters\Filters.php(182): CodeIgniter\Filters\CSRF->before(Object(CodeIgniter\HTTP\IncomingRequest), null)
+ 4 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\Filters\Filters->run('login', 'before')
+ 5 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(85): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-23 03:40:02 --> The action you requested is not allowed.
+in SYSTEMPATH\Security\Security.php on line 298.
+ 1 SYSTEMPATH\Security\Security.php(298): CodeIgniter\Security\Exceptions\SecurityException::forDisallowedAction()
+ 2 SYSTEMPATH\Filters\CSRF.php(55): CodeIgniter\Security\Security->verify(Object(CodeIgniter\HTTP\IncomingRequest))
+ 3 SYSTEMPATH\Filters\Filters.php(182): CodeIgniter\Filters\CSRF->before(Object(CodeIgniter\HTTP\IncomingRequest), null)
+ 4 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\Filters\Filters->run('login', 'before')
+ 5 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(85): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-23 03:40:50 --> The action you requested is not allowed.
+in SYSTEMPATH\Security\Security.php on line 298.
+ 1 SYSTEMPATH\Security\Security.php(298): CodeIgniter\Security\Exceptions\SecurityException::forDisallowedAction()
+ 2 SYSTEMPATH\Filters\CSRF.php(55): CodeIgniter\Security\Security->verify(Object(CodeIgniter\HTTP\IncomingRequest))
+ 3 SYSTEMPATH\Filters\Filters.php(182): CodeIgniter\Filters\CSRF->before(Object(CodeIgniter\HTTP\IncomingRequest), null)
+ 4 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\Filters\Filters->run('login', 'before')
+ 5 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(85): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-23 03:41:47 --> The action you requested is not allowed.
+in SYSTEMPATH\Security\Security.php on line 298.
+ 1 SYSTEMPATH\Security\Security.php(298): CodeIgniter\Security\Exceptions\SecurityException::forDisallowedAction()
+ 2 SYSTEMPATH\Filters\CSRF.php(55): CodeIgniter\Security\Security->verify(Object(CodeIgniter\HTTP\IncomingRequest))
+ 3 SYSTEMPATH\Filters\Filters.php(182): CodeIgniter\Filters\CSRF->before(Object(CodeIgniter\HTTP\IncomingRequest), null)
+ 4 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\Filters\Filters->run('login', 'before')
+ 5 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(85): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-23 03:42:23 --> The action you requested is not allowed.
+in SYSTEMPATH\Security\Security.php on line 298.
+ 1 SYSTEMPATH\Security\Security.php(298): CodeIgniter\Security\Exceptions\SecurityException::forDisallowedAction()
+ 2 SYSTEMPATH\Filters\CSRF.php(55): CodeIgniter\Security\Security->verify(Object(CodeIgniter\HTTP\IncomingRequest))
+ 3 SYSTEMPATH\Filters\Filters.php(182): CodeIgniter\Filters\CSRF->before(Object(CodeIgniter\HTTP\IncomingRequest), null)
+ 4 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\Filters\Filters->run('login', 'before')
+ 5 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(85): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-23 03:43:29 --> The action you requested is not allowed.
+in SYSTEMPATH\Security\Security.php on line 298.
+ 1 SYSTEMPATH\Security\Security.php(298): CodeIgniter\Security\Exceptions\SecurityException::forDisallowedAction()
+ 2 SYSTEMPATH\Filters\CSRF.php(55): CodeIgniter\Security\Security->verify(Object(CodeIgniter\HTTP\IncomingRequest))
+ 3 SYSTEMPATH\Filters\Filters.php(182): CodeIgniter\Filters\CSRF->before(Object(CodeIgniter\HTTP\IncomingRequest), null)
+ 4 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\Filters\Filters->run('login', 'before')
+ 5 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(85): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-23 03:43:41 --> The action you requested is not allowed.
+in SYSTEMPATH\Security\Security.php on line 298.
+ 1 SYSTEMPATH\Security\Security.php(298): CodeIgniter\Security\Exceptions\SecurityException::forDisallowedAction()
+ 2 SYSTEMPATH\Filters\CSRF.php(55): CodeIgniter\Security\Security->verify(Object(CodeIgniter\HTTP\IncomingRequest))
+ 3 SYSTEMPATH\Filters\Filters.php(182): CodeIgniter\Filters\CSRF->before(Object(CodeIgniter\HTTP\IncomingRequest), null)
+ 4 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\Filters\Filters->run('login', 'before')
+ 5 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(85): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-23 03:44:18 --> The action you requested is not allowed.
+in SYSTEMPATH\Security\Security.php on line 298.
+ 1 SYSTEMPATH\Security\Security.php(298): CodeIgniter\Security\Exceptions\SecurityException::forDisallowedAction()
+ 2 SYSTEMPATH\Filters\CSRF.php(55): CodeIgniter\Security\Security->verify(Object(CodeIgniter\HTTP\IncomingRequest))
+ 3 SYSTEMPATH\Filters\Filters.php(182): CodeIgniter\Filters\CSRF->before(Object(CodeIgniter\HTTP\IncomingRequest), null)
+ 4 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\Filters\Filters->run('login', 'before')
+ 5 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(85): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-23 03:57:52 --> Call to undefined method CodeIgniter\Session\Session::get_userdata()
+in APPPATH\Controllers\MainController.php on line 235.
+ 1 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\MainController->getName()
+ 2 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MainController))
+ 3 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(85): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-23 04:09:07 --> Undefined property: App\Controllers\MainController::$session
+in APPPATH\Controllers\MainController.php on line 235.
+ 1 APPPATH\Controllers\MainController.php(235): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: App\\Controllers\\MainController::$session', 'C:\\laragon\\www\\backend\\app\\Controllers\\MainController.php', 235)
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\MainController->getName()
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MainController))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(85): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-23 04:09:42 --> Undefined variable $session
+in APPPATH\Controllers\MainController.php on line 235.
+ 1 APPPATH\Controllers\MainController.php(235): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $session', 'C:\\laragon\\www\\backend\\app\\Controllers\\MainController.php', 235)
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\MainController->getName()
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MainController))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(85): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-23 04:09:59 --> Undefined property: App\Controllers\MainController::$session
+in APPPATH\Controllers\MainController.php on line 235.
+ 1 APPPATH\Controllers\MainController.php(235): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: App\\Controllers\\MainController::$session', 'C:\\laragon\\www\\backend\\app\\Controllers\\MainController.php', 235)
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\MainController->getName()
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MainController))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(85): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-23 04:11:42 --> Call to a member function set() on null
+in APPPATH\Controllers\MainController.php on line 205.
+ 1 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\MainController->login()
+ 2 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MainController))
+ 3 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(85): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-23 04:13:29 --> Call to a member function set() on null
+in APPPATH\Controllers\MainController.php on line 205.
+ 1 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\MainController->login()
+ 2 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MainController))
+ 3 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(85): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-23 04:13:42 --> Call to a member function set_userdata() on null
+in APPPATH\Controllers\MainController.php on line 205.
+ 1 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\MainController->login()
+ 2 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MainController))
+ 3 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(85): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-23 04:14:03 --> Call to a member function set() on null
+in APPPATH\Controllers\MainController.php on line 205.
+ 1 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\MainController->login()
+ 2 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MainController))
+ 3 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(85): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-23 04:15:04 --> Call to a member function set() on null
+in APPPATH\Controllers\MainController.php on line 205.
+ 1 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\MainController->login()
+ 2 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MainController))
+ 3 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(85): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-23 04:15:32 --> Call to a member function set() on null
+in APPPATH\Controllers\MainController.php on line 205.
+ 1 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\MainController->login()
+ 2 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MainController))
+ 3 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(85): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-23 04:15:52 --> Undefined variable $session
+in APPPATH\Controllers\MainController.php on line 205.
+ 1 APPPATH\Controllers\MainController.php(205): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $session', 'C:\\laragon\\www\\backend\\app\\Controllers\\MainController.php', 205)
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\MainController->login()
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MainController))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(85): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-23 04:16:53 --> Undefined variable $session
+in APPPATH\Controllers\MainController.php on line 205.
+ 1 APPPATH\Controllers\MainController.php(205): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $session', 'C:\\laragon\\www\\backend\\app\\Controllers\\MainController.php', 205)
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\MainController->login()
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MainController))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(85): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-23 04:17:36 --> Undefined variable $session
+in APPPATH\Controllers\MainController.php on line 205.
+ 1 APPPATH\Controllers\MainController.php(205): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $session', 'C:\\laragon\\www\\backend\\app\\Controllers\\MainController.php', 205)
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\MainController->login()
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MainController))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(85): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-23 04:17:47 --> Undefined variable $session
+in APPPATH\Controllers\MainController.php on line 205.
+ 1 APPPATH\Controllers\MainController.php(205): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $session', 'C:\\laragon\\www\\backend\\app\\Controllers\\MainController.php', 205)
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\MainController->login()
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MainController))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(85): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-23 04:18:20 --> "start" filter must have a matching alias defined.
+in SYSTEMPATH\Filters\Filters.php on line 576.
+ 1 SYSTEMPATH\Filters\Filters.php(576): CodeIgniter\Filters\Exceptions\FilterException::forNoAlias('start')
+ 2 SYSTEMPATH\Filters\Filters.php(259): CodeIgniter\Filters\Filters->processAliasesToClass('before')
+ 3 SYSTEMPATH\Filters\Filters.php(170): CodeIgniter\Filters\Filters->initialize('login')
+ 4 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\Filters\Filters->run('login', 'before')
+ 5 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(85): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-23 04:18:25 --> Undefined variable $session
+in APPPATH\Controllers\MainController.php on line 205.
+ 1 APPPATH\Controllers\MainController.php(205): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $session', 'C:\\laragon\\www\\backend\\app\\Controllers\\MainController.php', 205)
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\MainController->login()
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MainController))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(85): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-23 04:21:33 --> Undefined variable $session
+in APPPATH\Controllers\MainController.php on line 205.
+ 1 APPPATH\Controllers\MainController.php(205): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $session', 'C:\\laragon\\www\\backend\\app\\Controllers\\MainController.php', 205)
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\MainController->login()
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MainController))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(85): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-23 04:24:11 --> Undefined variable $session
+in APPPATH\Controllers\MainController.php on line 205.
+ 1 APPPATH\Controllers\MainController.php(205): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $session', 'C:\\laragon\\www\\backend\\app\\Controllers\\MainController.php', 205)
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\MainController->login()
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MainController))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(85): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-23 04:24:12 --> Undefined variable $session
+in APPPATH\Controllers\MainController.php on line 205.
+ 1 APPPATH\Controllers\MainController.php(205): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $session', 'C:\\laragon\\www\\backend\\app\\Controllers\\MainController.php', 205)
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\MainController->login()
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MainController))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(85): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-23 04:24:20 --> Undefined variable $session
+in APPPATH\Controllers\MainController.php on line 205.
+ 1 APPPATH\Controllers\MainController.php(205): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $session', 'C:\\laragon\\www\\backend\\app\\Controllers\\MainController.php', 205)
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\MainController->login()
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MainController))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(85): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-23 04:25:03 --> Undefined variable $session
+in APPPATH\Controllers\MainController.php on line 205.
+ 1 APPPATH\Controllers\MainController.php(205): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $session', 'C:\\laragon\\www\\backend\\app\\Controllers\\MainController.php', 205)
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\MainController->login()
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MainController))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(85): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-23 04:25:30 --> Undefined property: App\Controllers\MainController::$session
+in APPPATH\Controllers\MainController.php on line 205.
+ 1 APPPATH\Controllers\MainController.php(205): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: App\\Controllers\\MainController::$session', 'C:\\laragon\\www\\backend\\app\\Controllers\\MainController.php', 205)
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\MainController->login()
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MainController))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(85): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-23 04:25:43 --> Undefined property: App\Controllers\MainController::$session
+in APPPATH\Controllers\MainController.php on line 205.
+ 1 APPPATH\Controllers\MainController.php(205): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: App\\Controllers\\MainController::$session', 'C:\\laragon\\www\\backend\\app\\Controllers\\MainController.php', 205)
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\MainController->login()
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MainController))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(85): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-23 04:26:15 --> Undefined property: App\Controllers\MainController::$session
+in APPPATH\Controllers\MainController.php on line 205.
+ 1 APPPATH\Controllers\MainController.php(205): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: App\\Controllers\\MainController::$session', 'C:\\laragon\\www\\backend\\app\\Controllers\\MainController.php', 205)
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\MainController->login()
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MainController))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(85): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-23 04:26:25 --> Call to a member function set() on null
+in APPPATH\Controllers\MainController.php on line 205.
+ 1 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\MainController->login()
+ 2 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MainController))
+ 3 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(85): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-23 04:26:31 --> Call to a member function set() on null
+in APPPATH\Controllers\MainController.php on line 205.
+ 1 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\MainController->login()
+ 2 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MainController))
+ 3 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(85): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-23 04:26:49 --> Call to a member function set() on null
+in APPPATH\Controllers\MainController.php on line 205.
+ 1 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\MainController->login()
+ 2 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MainController))
+ 3 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(85): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-23 04:27:18 --> Undefined variable $session
+in APPPATH\Controllers\MainController.php on line 205.
+ 1 APPPATH\Controllers\MainController.php(205): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $session', 'C:\\laragon\\www\\backend\\app\\Controllers\\MainController.php', 205)
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\MainController->login()
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MainController))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(85): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-23 04:28:35 --> Undefined property: App\Controllers\MainController::$session
+in APPPATH\Controllers\MainController.php on line 205.
+ 1 APPPATH\Controllers\MainController.php(205): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: App\\Controllers\\MainController::$session', 'C:\\laragon\\www\\backend\\app\\Controllers\\MainController.php', 205)
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\MainController->login()
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MainController))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(85): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-23 04:31:52 --> Undefined variable $sessions
+in APPPATH\Controllers\MainController.php on line 204.
+ 1 APPPATH\Controllers\MainController.php(204): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $sessions', 'C:\\laragon\\www\\backend\\app\\Controllers\\MainController.php', 204)
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\MainController->login()
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MainController))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(85): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-23 04:31:58 --> Undefined variable $sessions
+in APPPATH\Controllers\MainController.php on line 204.
+ 1 APPPATH\Controllers\MainController.php(204): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $sessions', 'C:\\laragon\\www\\backend\\app\\Controllers\\MainController.php', 204)
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\MainController->login()
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MainController))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(85): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-23 04:32:17 --> Undefined property: App\Controllers\MainController::$session
+in APPPATH\Controllers\MainController.php on line 205.
+ 1 APPPATH\Controllers\MainController.php(205): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: App\\Controllers\\MainController::$session', 'C:\\laragon\\www\\backend\\app\\Controllers\\MainController.php', 205)
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\MainController->login()
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MainController))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(85): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-23 04:32:39 --> Undefined property: App\Controllers\MainController::$session
+in APPPATH\Controllers\MainController.php on line 205.
+ 1 APPPATH\Controllers\MainController.php(205): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: App\\Controllers\\MainController::$session', 'C:\\laragon\\www\\backend\\app\\Controllers\\MainController.php', 205)
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\MainController->login()
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MainController))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(85): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-23 04:32:51 --> Undefined property: App\Controllers\MainController::$session
+in APPPATH\Controllers\MainController.php on line 205.
+ 1 APPPATH\Controllers\MainController.php(205): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: App\\Controllers\\MainController::$session', 'C:\\laragon\\www\\backend\\app\\Controllers\\MainController.php', 205)
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\MainController->login()
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MainController))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(85): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-23 04:32:55 --> Undefined property: App\Controllers\MainController::$session
+in APPPATH\Controllers\MainController.php on line 205.
+ 1 APPPATH\Controllers\MainController.php(205): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: App\\Controllers\\MainController::$session', 'C:\\laragon\\www\\backend\\app\\Controllers\\MainController.php', 205)
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\MainController->login()
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MainController))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(85): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-23 04:33:19 --> Undefined property: App\Controllers\MainController::$session
+in APPPATH\Controllers\MainController.php on line 205.
+ 1 APPPATH\Controllers\MainController.php(205): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: App\\Controllers\\MainController::$session', 'C:\\laragon\\www\\backend\\app\\Controllers\\MainController.php', 205)
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\MainController->login()
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MainController))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(85): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-23 04:35:07 --> Undefined property: App\Controllers\MainController::$session
+in APPPATH\Controllers\MainController.php on line 205.
+ 1 APPPATH\Controllers\MainController.php(205): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: App\\Controllers\\MainController::$session', 'C:\\laragon\\www\\backend\\app\\Controllers\\MainController.php', 205)
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\MainController->login()
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MainController))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(85): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-23 14:14:48 --> There is no data to update.
+in SYSTEMPATH\BaseModel.php on line 930.
+ 1 SYSTEMPATH\BaseModel.php(930): CodeIgniter\Database\Exceptions\DataException::forEmptyDataset('update')
+ 2 SYSTEMPATH\Model.php(776): CodeIgniter\BaseModel->update([...], [])
+ 3 APPPATH\Controllers\MainController.php(42): CodeIgniter\Model->update('9', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\MainController->approveStaff('9')
+ 5 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MainController))
+ 6 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(85): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-23 14:17:53 --> There is no data to update.
+in SYSTEMPATH\BaseModel.php on line 930.
+ 1 SYSTEMPATH\BaseModel.php(930): CodeIgniter\Database\Exceptions\DataException::forEmptyDataset('update')
+ 2 SYSTEMPATH\Model.php(776): CodeIgniter\BaseModel->update([...], [])
+ 3 APPPATH\Controllers\MainController.php(42): CodeIgniter\Model->update('9', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\MainController->approveStaff('9')
+ 5 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MainController))
+ 6 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(85): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-23 14:18:06 --> There is no data to update.
+in SYSTEMPATH\BaseModel.php on line 930.
+ 1 SYSTEMPATH\BaseModel.php(930): CodeIgniter\Database\Exceptions\DataException::forEmptyDataset('update')
+ 2 SYSTEMPATH\Model.php(776): CodeIgniter\BaseModel->update([...], [])
+ 3 APPPATH\Controllers\MainController.php(42): CodeIgniter\Model->update('10', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\MainController->approveStaff('10')
+ 5 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MainController))
+ 6 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(85): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-23 14:18:52 --> There is no data to update.
+in SYSTEMPATH\BaseModel.php on line 930.
+ 1 SYSTEMPATH\BaseModel.php(930): CodeIgniter\Database\Exceptions\DataException::forEmptyDataset('update')
+ 2 SYSTEMPATH\Model.php(776): CodeIgniter\BaseModel->update([...], [])
+ 3 APPPATH\Controllers\MainController.php(42): CodeIgniter\Model->update('8', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\MainController->approveStaff('8')
+ 5 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MainController))
+ 6 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(85): CodeIgniter\CodeIgniter->run()

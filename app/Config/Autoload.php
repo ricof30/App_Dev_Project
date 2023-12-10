@@ -47,8 +47,10 @@ class Autoload extends AutoloadConfig
     public $psr4 = [
         APP_NAMESPACE => APPPATH, // For custom app namespace
         'Config'      => APPPATH . 'Config',
+        'CodeIgniter\Session' => SYSTEMPATH . 'Session',
+        'App\Libraries' => APPPATH . 'Libraries',
+        // 'CodeIgniter\Filters' => APPPATH . 'Filters',
     ];
-
     /**
      * -------------------------------------------------------------------
      * Class Map
@@ -66,8 +68,9 @@ class Autoload extends AutoloadConfig
      *
      * @var array<string, string>
      */
-    public $classmap = [];
+    public $classmap = [ ];
 
+ 
     /**
      * -------------------------------------------------------------------
      * Files

@@ -20,6 +20,8 @@ use Config\Session as SessionConfig;
 use Psr\Log\LoggerAwareTrait;
 use SessionHandlerInterface;
 
+
+
 /**
  * Implementation of CodeIgniter session container.
  *
@@ -83,8 +85,8 @@ class Session implements SessionInterface
      *
      * @deprecated Use $this->config->savePath.
      */
-    protected $sessionSavePath;
-
+    // protected $sessionSavePath;
+    protected  $sessionSavePath;
     /**
      * Whether to match the user's IP address when reading the session data.
      *
