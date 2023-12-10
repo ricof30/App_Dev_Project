@@ -20,33 +20,26 @@
                                         <div class="text-center">
                                             <h1 class="h4 text-gray-900 mb-4">Welcome Back!</h1>
                                         </div>
-                                        <form class="user">
+                                        <div v-if="errorMessage" class="text-center text-danger mt-3">
+                                            {{ errorMessage }}
+                                          </div>
+                                        <form class="user" @submit.prevent="validateAndLogin">
                                             <div class="form-group">
-                                                <input type="email" class="form-control form-control-user"
-                                                    id="exampleInputEmail" aria-describedby="emailHelp"
-                                                    placeholder="Enter Email Address...">
+                                                <input v-model="email" type="email" class="form-control form-control-user" required placeholder="Enter Email Address...">
                                             </div>
                                             <div class="form-group">
-                                                <input type="password" class="form-control form-control-user"
-                                                    id="exampleInputPassword" placeholder="Password">
-                                            </div>
-                                            <div class="form-group">
-                                                <div class="custom-control custom-checkbox small">
-                                                    <input type="checkbox" class="custom-control-input" id="customCheck">
-                                                    <label class="custom-control-label" for="customCheck">Remember
-                                                        Me</label>
-                                                </div>
-                                            </div>
-                                            <a href="index.html" class="btn btn-primary btn-user btn-block">
+                                                <input v-model="password" type="password" class="form-control form-control-user" placeholder="Password">
+                                            </div>  
+                                            <button  type="submit" class="btn btn-primary btn-user btn-block">
                                                 Login
-                                            </a>
+                                              </button>
                                         </form>
                                         <hr>
                                         <div class="text-center">
-                                            <a class="small" href="forgot-password.html">Forgot Password?</a>
+                                          <router-link to="forgot">Forgot Password?</router-link>
                                         </div>
                                         <div class="text-center">
-                                            <a class="small" href="register.html">Create an Account!</a>
+                                            <router-link to="register">Create an Account</router-link>
                                         </div>
                                     </div>
                                 </div>
@@ -71,12 +64,66 @@
 <script>
  
 
-
-        import { onMounted } from 'vue'
+    import axios from 'axios'   
+    import { onMounted } from 'vue'
     export default {
-      
       name: 'Login',
 
+      data() {
+    return {
+      email: '',
+      password: '',
+      errorMessage: '',
+    };
+  },
+  methods: {
+    
+    
+    validateAndLogin() {
+        // console.log(response.data.message)
+      if (!this.email || !this.password) {
+        this.errorMessage = 'Email and password are required';
+      } else {
+        this.login();
+      }
+    },
+    login() {
+      const data = {
+        email: this.email,
+        password: this.password,
+      };
+
+      axios
+        .post('/login', JSON.stringify(data), {
+          headers: {
+            'Content-Type': 'application/json',
+          },
+        })
+        .then((response) => {
+          if (response.data.message === 'Login successful') {
+            // console.log(response.data.message)
+            this.$router.push('/userdashboard');
+            localStorage.setItem('name', response.data.name);
+            localStorage.setItem('token', response.data.token);
+          
+          }
+        })
+        .catch((error) => {
+            console.error(error.response.data);
+                if ( error.response.data ) {
+                    this.errorMessage = error.response.data;
+                } else {
+                    this.errorMessage = 'Invalid email or password, try again!';
+                }
+                this.clearErrorMessageAfterDelay(3000);
+            });
+    },
+    clearErrorMessageAfterDelay(delay) {
+    setTimeout(() => {
+      this.errorMessage = '';
+    }, delay);
+  },
+  },
       setup() {
     async function loadScript(src) {
       return new Promise((resolve, reject) => {

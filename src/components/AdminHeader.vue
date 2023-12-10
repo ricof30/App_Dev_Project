@@ -3,46 +3,39 @@
         <nav class="navbar top-navbar col-lg-12 col-12 p-0">
           <div class="container">
             <div class="text-center navbar-brand-wrapper d-flex align-items-center justify-content-center">
-             
+              <a class="navbar-brand brand-logo" href="index.html">
+                <img class="dswd_image" style="height: 50px" :src="require('@/assets/assets/img/dswd_final.png')" alt="...">
+                <!-- <span class="font-12 d-block font-weight-light">DSWD</span> -->
+              </a>
+              <a class="navbar-brand brand-logo-mini" href="index.html"><img style="height: 50px; width: 50px" :src="require('@/assets/assets/img/dswd_final.png')" alt="logo" /></a>
             </div>
             <div class="navbar-menu-wrapper d-flex align-items-center justify-content-end">
               <ul class="navbar-nav mr-lg-2">
-                <li class="nav-item nav-search d-none d-lg-block">
-                  
-                <form class="form-inline mr-auto w-100 navbar-search" action="post">
-                    <div class="input-group">
-                        <input type="text" class="form-control bg-light border-0 small"
-                        id="navbar-search-input" placeholder="Search" aria-label="search"
-                            aria-describedby="search">
-                        <div class="input-group-append">
-                            <button class="btn btn-primary" type="button">
-                                <i class="mdi mdi-magnify"></i>
-                            </button>
-                        </div>
-                    </div>
-                </form>
+                <li class="nav-item nav-search d-none d-lg-block">    
                 </li>
               </ul>
               <ul class="navbar-nav navbar-nav-right">
                 <li class="nav-item nav-profile dropdown">
                   <a class="nav-link" id="profileDropdown" href="#" data-bs-toggle="dropdown" aria-expanded="false">
                     <div class="nav-profile-img">
-               <img :src="require('../assets/assets/admin/images/faces/face1.jpg')" alt="image" />
+                      <img class="img-profile rounded-circle"
+                      :src="require('@/assets/assets/img/user icon.png')">
                     </div>
                     <div class="nav-profile-text">
-                      <p class="text-black font-weight-semibold m-0"> Olson jass </p>
+                      <p class="text-black font-weight-semibold m-0">{{ userName }}</p>
                       <span class="font-13 online-color">online <i class="mdi mdi-chevron-down"></i></span>
                     </div>
                   </a>
                   <div class="dropdown-menu navbar-dropdown" aria-labelledby="profileDropdown">
-                    <a class="dropdown-item" href="#">
-                      <i class="mdi mdi-cached me-2 text-success"></i> Activity Log </a>
-                    <div class="dropdown-divider"></div>
-                    <a class="dropdown-item" href="#">
-                      <i class="mdi mdi-logout me-2 text-primary"></i> Signout </a>
+                    <!-- <a class="dropdown-item" href="login">
+                      <i class="mdi mdi-logout me-2 text-primary"></i> Signout </a> -->
+                      <router-link to=""  @click="logout" class="dropdown-item" >
+                        <i class="mdi mdi-logout me-2 text-primary"></i> Signout
+                      </router-link>
                   </div>
                 </li>
               </ul>
+              
               <button class="navbar-toggler navbar-toggler-right d-lg-none align-self-center" type="button" data-toggle="horizontal-menu-toggle">
                 <span class="mdi mdi-menu"></span>
               </button>
@@ -53,61 +46,35 @@
           <div class="container">
             <ul class="nav page-navigation">
               <li class="nav-item">
-                <a class="nav-link" href="index.html">
+                <router-link to="userdashboard" class="nav-link" >
                   <i class="mdi mdi-compass-outline menu-icon"></i>
-                  <span class="menu-title">Dashboard</span>
-                </a>
+                  <span class="menu-title">Home Page</span>
+                </router-link>
               </li>
               <li class="nav-item">
-                <a href="#" class="nav-link">
+                <router-link to="updating" class="nav-link" >
                   <i class="mdi mdi-monitor-dashboard menu-icon"></i>
-                  <span class="menu-title">UI Elements</span>
-                  <i class="menu-arrow"></i>
-                </a>
-                <div class="submenu">
-                  <ul class="submenu-item">
-                    <li class="nav-item">
-                      <a class="nav-link" href="pages/ui-features/buttons.html">Buttons</a>
-                    </li>
-                    <li class="nav-item">
-                      <a class="nav-link" href="pages/ui-features/dropdowns.html">Dropdown</a>
-                    </li>
-                    <li class="nav-item">
-                      <a class="nav-link" href="pages/ui-features/typography.html">Typography</a>
-                    </li>
-                  </ul>
-                </div>
+                  <span class="menu-title">Beneficiary Updating Module</span>
+                </router-link>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="pages/forms/basic_elements.html">
-                  <i class="mdi mdi-clipboard-text menu-icon"></i>
-                  <span class="menu-title">Forms</span>
-                </a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="pages/icons/mdi.html">
+                <router-link to="encoder" class="nav-link" >
                   <i class="mdi mdi-contacts menu-icon"></i>
-                  <span class="menu-title">Icons</span>
-                </a>
+                  <span class="menu-title">Encoder</span>
+                </router-link>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="pages/charts/chartjs.html">
-                  <i class="mdi mdi-chart-bar menu-icon"></i>
-                  <span class="menu-title">Charts</span>
-                </a>
+                <router-link to="upload" class="nav-link" >
+                  <i class="mdi mdi-clipboard-text menu-icon"></i>
+                  <span class="menu-title">Open Excel File </span>
+                </router-link>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="pages/tables/basic-table.html">
-                  <i class="mdi mdi-table-large menu-icon"></i>
-                  <span class="menu-title">Tables</span>
-                </a>
-              </li>
-              <li class="nav-item">
-                <a href="https://www.bootstrapdash.com/demo/plus-free/documentation/documentation.html" class="nav-link" target="_blank">
+                <router-link to="generate" class="nav-link" style="margin-top: 4px;" >
                   <i class="mdi mdi-file-document-box menu-icon"></i>
-                  <span class="menu-title">Docs</span></a>
+                  <span class="menu-title" style="margin-top">Generate Report</span>
+                </router-link>
               </li>
-           
             </ul>
           </div>
         </nav>
@@ -115,12 +82,24 @@
 </template>
 <script>
     
-    
+  
     import { onMounted } from 'vue'
         export default {
           
           name: 'AdminHeader',
-    
+          computed: {
+          userName() {
+            return localStorage.getItem('name');
+          },
+        },
+        methods:{
+          logout(){
+            localStorage.removeItem('token');
+            localStorage.clear('name');
+            this.$router.push('/adminLogin');
+          
+          },
+        },
           setup() {
         async function loadScript(src) {
           return new Promise((resolve, reject) => {

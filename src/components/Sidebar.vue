@@ -11,7 +11,7 @@
 
         <!-- Nav Item - Dashboard -->
         <li class="nav-item ">
-            <router-link to="user" class="nav-link">
+            <router-link to="admindashboard" class="nav-link">
             <!-- <a class="nav-link" href="user"> -->
                 <i class="fas fa-fw fa-tachometer-alt"></i>
                 <span>HomePage</span></router-link>
@@ -20,24 +20,33 @@
         <div class="sidebar-heading">
             Staff
         </div>
-
-        <!-- Nav Item - Pages Collapse Menu -->
         <li class="nav-item">
-            <!-- <a class="nav-link collapsed" href="table"
-                aria-expanded="true" aria-controls="collapseTwo"> -->
-                <router-link to="table" class="nav-link" >  
+
+                <router-link to="pending" class="nav-link" >  
                 <i class="fas fa-fw fa-folder"></i>
-                <span>Benificiaries Updating</span>
+                <span>Pending Approval</span>
             </router-link>
-            <router-link to="upload" class="nav-link" >  
+            <router-link to="approved" class="nav-link" >  
                 <i class="fas fa-fw fa-folder"></i>
-                <span>File Upload</span>
+                <span>Approved Staff</span>
             </router-link>
         </li>
         <hr class="sidebar-divider text-secondary">
         <div class="sidebar-heading">
-            Encoder/Validator
+            Beneficiaries
         </div>
+        <li class="nav-item">
+                <router-link to="list" class="nav-link" >  
+                <i class="fas fa-fw fa-folder"></i>
+                <span>List of Beneficiaries</span>
+            </router-link>
+        </li>
+        <li class="nav-item">
+            <router-link to="recyclebin" class="nav-link" >  
+            <i class="fas fa-fw fa-folder"></i>
+            <span>Deleted Beneficiaries</span>
+        </router-link>
+    </li>
         <!-- <li class="nav-item"> -->
             <!-- <a class="nav-link collapsed" href="table"
                 aria-expanded="true" aria-controls="collapseTwo"> -->

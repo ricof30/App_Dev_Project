@@ -8,32 +8,42 @@
                 <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
                     <thead>
                         <tr>
-                            <th>FIRSTNAME</th>
-                            <th>MIDDLENAME</th>
-                            <th>LASTNAME</th>
+                            <th>GRANTEE NAME</th>
                             <th>MUNICIPALITY</th>
-                            <th>BARANGAY</th>
                             <th>HH_ID</th>
-                            <th>ENTRY_ID</th>
-                            <th>SEX</th>
-                            <th>AGE</th>
-                            <th>BIRTHDAY</th>
-                            <th>CLIENT_STATUS</th>
+                            <th>BARANGAY</th>
+                            <th>HH STATUS</th>
+                            <th>VALIDATED</th>
+                            <th>WITH VALIDATION TOOL</th>
+                            <th>WITH UPDATE REQUEST</th>
+                            <th>DATE VALIDATED</th>
+                            <th>NAME OF VALIDATOR</th>
+                            <th>SUBMITTED</th>
+                            <th>DATE SUBMITTED</th>
+                              <th>ENCODED IN PPIS/MCCTIS</th>
+                              <th>REMARKS</th>
+                              <th>DATE ENCODED</th>
+                              <th>ENCODER</th>
                         </tr>
                     </thead>
                     <tbody>
                         <tr v-for="info in minsu_victoria_roster_list_as_of_october_2023" >
-                            <td>{{info.FIRST_NAME}}</td>
-                            <td>{{info.MIDDLE_NAME}}</td>
-                            <td>{{info.LAST_NAME}}</td>
+                            <td>{{info.GRANTEE_NAME}}</td>
                             <td>{{info.MUNICIPALITY}}</td>
-                            <td>{{info.BRGY}}</td>
                             <td>{{info.HH_ID}}</td>
-                            <td>{{info.ENTRY_ID}}</td>
-                            <td>{{info.SEX}}</td>
-                            <td>{{info.AGE}}</td>
-                            <td>{{info.BIRTHDAY}}</td>
-                            <td>{{info.CLIENT_STATUS}}</td>
+                            <td>{{info.BRGY}}</td>
+                            <td>{{info.HH_STATUS}}</td>
+                            <td>{{info.VALIDATED}}</td>
+                            <td>{{info.WITH_VALIDATION_TOOL}}</td>
+                            <td>{{info.WITH_UPDATE_REQUEST}}</td>
+                            <td>{{info.DATE_VALIDATED}}</td>
+                            <td>{{info.NAME_OF_VALIDATOR}}</td>
+                            <td>{{info.SUBMITTED}}</td>
+                            <td>{{info.DATE_SUBMITTED}}</td>
+                            <td>{{info.ENCODED_IN_PPIS/MCCTIS}}</td>
+                            <td>{{info.REMARKS}}</td>
+                            <td>{{info.DATE_ENCODED}}</td>
+                            <td>{{info.ENCODER}}</td>
                         </tr>                        
                     </tbody>
                 </table>
@@ -64,7 +74,7 @@ import { onMounted } from 'vue'
         methods: {
             async getInfo(){
                 try {
-                    const inf = await axios.get('getData');
+                    const inf = await axios.get('getDataEncoded');
                 this.minsu_victoria_roster_list_as_of_october_2023 = inf.data;
                 } catch (error) {
                     console.log(error);

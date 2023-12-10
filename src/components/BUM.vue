@@ -1,19 +1,24 @@
 
     <template>
+      <div v-if="successMessage" class="text-center text-success mt-3">
+        {{ $store.state.successMessage }}
+      </div>
         <div id="content-wrapper" class="d-flex flex-column">
             <nav class="navbar navbar-expand navbar-light bg-white topbar mb-4 static-top shadow text-center">
-                    <h3 class="text-primary ">Benificiares Updating Module</h3>
-                <div class="input-group search">
-                  <input v-model="householdId" type="text" class="form-control  w-100" style="max-width:500px; margin-left:350px;" placeholder="Enter Household ID" >
-                  <div class="input-group-append">
-                    <button class="btn btn-primary" @click="searchHousehold">
-                      Search
-                    </button>
-                </div>
-              </div>
+                    <!-- <h3 class="text-primary ">Benificiares Updating Module</h3> -->
+                    <div class="input-group d-flex justify-content-end align-items-end">
+                      <input v-model="householdId" type="text" class="form-control bg-light border-0 small " placeholder="Enter HouseHold-id" style="margin-left: 70%">
+                      <div class="input-group-append">
+                          <button class="btn btn-primary"  @click="searchHousehold">
+                              <i class="fas fa-search fa-sm"></i>
+                          </button>
+                      </div>
+                  </div>
            </nav>  
     </div>
-
+    <!-- <div v-if="$store.state.alertMessage">
+      <p>{{ $store.state.alertMessage }}</p>
+    </div> -->
     <div v-if="searchResults.length > 0">
       <div class="card shadow mb-4">
         <div class="card-header py-3">
@@ -36,12 +41,13 @@
                             <th class="font-weight-bold">CAPABLE GRANTEE</th>        
                         </tr>
                     </thead>
+                    
                     <tbody>
                         <tr v-for="info in searchResults" :key="info.HH_ID" class="text-center">
                             <td>
                               <router-link :to="{ name: 'validate', params: { entryId: info.ENTRY_ID } }"  class="nav-link" >
                                 <button class="btn btn-primary">
-                                    <i class="fas fa-edit"></i> Edit
+                                    <i class="fas fa-edit"></i> Update
                                 </button>
                             </router-link>
                             </td>
@@ -71,7 +77,7 @@
     <script>
     import axios from 'axios';
     import { onMounted } from 'vue'
-    export default {
+    export default { 
       name: 'BUM',
       data() {
     return {
@@ -97,8 +103,10 @@
         });
     },
   },
+ 
+
     //for loading js
-      setup() {
+    setup() {
         async function loadScript(src) {
           return new Promise((resolve, reject) => {
             const script = document.createElement('script');
@@ -116,8 +124,6 @@
         }
     
         onMounted(async () => {
-            // await loadScript('../vendor/chart.js/Chart.min.js'); 
-            await loadScript('../vendor/jquery/jquery.min.js'); 
           await loadScriptsInOrder([
     
           '../vendor/jquery/jquery.min.js', 
@@ -130,7 +136,7 @@
       '../js/demo/datatables-demo.js',  
           ]);
         });
-    },
+}
     };
     </script>
     

@@ -12,14 +12,14 @@
         </button>
 
         <!-- Topbar Search -->
-            <div class="input-group">
+            <!-- <div class="input-group">
                 <input v-model="householdId" type="text" class="form-control bg-light border-0 small " placeholder="Enter HouseHold-id">
                 <div class="input-group-append">
                     <button class="btn btn-primary"  @click="searchHousehold">
                         <i class="fas fa-search fa-sm"></i>
                     </button>
                 </div>
-            </div>
+            </div> -->
         <!-- Topbar Navbar -->
         <ul class="navbar-nav ml-auto">
             <div class="topbar-divider d-none d-sm-block"></div>
@@ -27,17 +27,16 @@
             <li class="nav-item dropdown no-arrow">
                 <a class="nav-link dropdown-toggle" href="#" id="userDropdown" role="button"
                     data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                    <span class="mr-2 d-none d-lg-inline text-gray-600 small">Douglas McGee</span>
+                    <span class="mr-2 d-none d-lg-inline text-gray-600 small">{{ userName }}</span>
                     <img class="img-profile rounded-circle"
                         :src="require('@/assets/assets/img/undraw_profile.svg')">
                 </a>
                 <!-- Dropdown - User Information -->
                 <div class="dropdown-menu dropdown-menu-right shadow animated--grow-in"
                     aria-labelledby="userDropdown">
-                    <a class="dropdown-item" href="#" data-toggle="modal" data-target="#logoutModal">
-                        <i class="fas fa-sign-out-alt fa-sm fa-fw mr-2 text-gray-400"></i>
-                        Logout
-                    </a>
+                    <router-link to=""  @click="logout" class="dropdown-item" >
+                      <i class="mdi mdi-logout me-2 text-primary"></i> Signout
+                    </router-link>
                 </div>
             </li>
         </ul>
@@ -45,28 +44,29 @@
     <div v-if="searchResults.length > 0">
         <div class="card shadow mb-4">
           <div class="card-header py-3">
-              <h6 class="m-0 font-weight-bold text-primary">Search Results</h6>
+           
+              <h6 class="m-0 font-weight-bold text-primary"> <i class="fas fa-thin fa-filter"></i>Search Filter </h6>
           </div>
           <div class="card-body">
               <div class="table-responsive">
                   <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
                       <thead>
-                          <tr>
-                              <th>FIRSTNAME</th>
-                              <th>MIDDLENAME</th>
-                              <th>LASTNAME</th>
-                              <th>MUNICIPALITY</th>
-                              <th>BARANGAY</th>
-                              <th>HH_ID</th>
-                              <th>ENTRY_ID</th>
-                              <th>SEX</th>
-                              <th>AGE</th>
-                              <th>BIRTHDAY</th>
-                              <th>CLIENT_STATUS</th>
+                        <tr class="text-center">
+                              <th class="font-weight-bold">FIRSTNAME</th>
+                              <th class="font-weight-bold">MIDDLENAME</th>
+                              <th class="font-weight-bold">LASTNAME</th>
+                              <th class="font-weight-bold">MUNICIPALITY</th>
+                              <th class="font-weight-bold">BARANGAY</th>
+                              <th class="font-weight-bold">HH_ID</th>
+                              <th class="font-weight-bold">ENTRY_ID</th>
+                              <th class="font-weight-bold">SEX</th>
+                              <th class="font-weight-bold">AGE</th>
+                              <th class="font-weight-bold">BIRTHDAY</th>
+                              <th class="font-weight-bold">CLIENT_STATUS</th>
                           </tr>
                       </thead>
                       <tbody>
-                          <tr v-for="info in searchResults" :key="info.HH_ID">
+                          <tr v-for="info in searchResults" :key="info.HH_ID"  class="text-center">
                               <td>{{info.FIRST_NAME}}</td>
                               <td>{{info.MIDDLE_NAME}}</td>
                               <td>{{info.LAST_NAME}}</td>
@@ -103,10 +103,28 @@ import axios from 'axios';
     return {
       householdId: '',
       searchResults: [],
+      // userName: '', 
     
     };
   },
+  computed: {
+    userName() {
+      // Retrieve user name from session storage
+      return sessionStorage.getItem('name') || localStorage.getItem('name');
+    },
+  },
+  // console.log(sessionStorage.getItem('name')),
   methods: {
+    logout(){
+            // const store = useStore();
+            // store.commit('setLoggedIn', false);
+            localStorage.removeItem('admintoken');
+            // Clear local storage or perform any other necessary actions
+            localStorage.clear('username');
+            this.$router.push('/login');
+            // console.log( localStorage.getItem('name'))
+          },
+
     searchHousehold() {
       // Make an AJAX request to your server for searching
       axios.post('/search', { householdId: this.householdId })
@@ -156,6 +174,7 @@ import axios from 'axios';
 </script>
 
 <style  >
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css');
 @import '@/assets/assets/css/sb-admin-2.min.css';
 @import '@/assets/assets/vendor/fontawesome-free/css/all.min.css';
 

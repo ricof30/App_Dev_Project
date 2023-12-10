@@ -8,8 +8,9 @@
   <script>
 
   import Header from '../components/AdminHeader.vue';
+  import Chart from '../components/admin/chart.vue';
       export default {
-        components:{Header},
+        components:{Header,Chart},
           name: 'Main',
       };
   </script>

@@ -1,20 +1,18 @@
 <template>
     <div id="wrapper">
-   <Sidebar></Sidebar>
+   <!-- <Sidebar></Sidebar> -->
            <div id="content-wrapper" class="d-flex flex-column">
             <div id="content">
                 <div class="container-fluid">
-                  <div class="container mt-5 ">
-                    <h2 class="mb-10 text-center text-primary font-weight-bold">Update Information Form</h2>
-                  
+                  <div class="container mb-3">
+                    <h2 class="mb-10 text-center text-primary font-weight-bold">Validator Update Information </h2>
                     <form id="updateForm" @submit.prevent="insert">
                         <input type="hidden" v-model="details.ENTRY_ID  " id="entryId"  class="form-control" placeholder="entryId" />
                         <input type="hidden" id="fullname"  class="form-control" v-model="full_name"/>
                         <input type="hidden" id="municipality"  class="form-control" v-model="details.MUNICIPALITY"/>
                         <input type="hidden" id="hhId"  class="form-control" v-model="details.HH_ID"/>
                         <input type="hidden" id="brgy"  class="form-control" v-model="details.BRGY"/>
-                        <input type="hidden" id="memberStatus"  class="form-control" v-model="details.MEMBER_STATUS"/>    <!-- </div> -->
-                
+                        <input type="hidden" id="memberStatus"  class="form-control" v-model="details.MEMBER_STATUS"/>   
                         <div class="row">
                             <div class="col-md-4">
                               <div class="mb-9">
@@ -24,7 +22,7 @@
                                   <option value="NO">No</option>
                                 </select>
                               </div>
-                      
+
                               <div class="mb-4">
                                 <label for="typeOfUpdate" class="form-label">Type of Update:</label>
                                 <div class="row">
@@ -75,7 +73,7 @@
                                   </div>
                                 </div>
                               </div>
-                              
+
                               <div class="mb-9">
                                 <label for="submitted" class="form-label">Submitted:</label>
                                 <select  v-model="submitted" class="form-select">
@@ -154,11 +152,10 @@
       export default {
         components:{Sidebar,Header},
           name: 'DashboardTable',
-
           props: ['entryId'],
     data() {
       return {
-        details: {}, // Initialize details as an empty object
+        details: {}, 
         full_name: '',
         nameOfValidator: "",
         validated: "",
@@ -193,7 +190,6 @@
           flatpickr("#dateSubmitted", { dateFormat: "Y-m-d" });
         },
     methods: {
-
       async insert(){
         const selectedTypeOfUpdate = Object.keys(this.typeOfUpdate).filter(key => this.typeOfUpdate[key]);
 
@@ -217,20 +213,27 @@
                 encoded: this.encoded,
               });
               if (ins.status === 200) {
-                // If successful, navigate to the /table route
-                this.$router.push('/table');
-              } else {
-                // Handle other cases if needed
-                console.error('Insertion was not successful:', ins);
-              }
-          } catch (error) {
-            console.error('Error inserting data:', error);
-          }
+            // If successful, navigate to the /table route
+            this.$router.push('/updating');
+        } else {
+            // Handle other cases if needed
+            console.error('Insertion was not successful:', ins);
+
+            // Check if the error is due to an existing grantee name
+            if (ins.status === 400 || ins.data.error === ('Grantee Name already exists.')) {
+            this.$router.push('/updating');
+}
+        }
+    } catch (error) {
+        console.error('Error inserting data:', error);
+        // this.$router.push('/updating');
+    }
       },
+    
       async editDetails(entryId) {
         try {
           const response = await axios.get(`/getDetails/${entryId}`);
-          this.details = response.data[0]; // Assuming your response is an array with a single object
+          this.details = response.data[0]; 
 
           if (this.details && this.details.ENTRY_ID) {
             // Now you can access details.ENTRY_ID and other properties
