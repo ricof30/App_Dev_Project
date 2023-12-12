@@ -1,0 +1,165 @@
+CRITICAL - 2023-11-30 03:01:45 --> Call to a member function isValid() on null
+in APPPATH\Controllers\MainController.php on line 259.
+ 1 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\MainController->uploadExcel()
+ 2 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MainController))
+ 3 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(85): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-30 03:02:25 --> Call to a member function isValid() on null
+in APPPATH\Controllers\MainController.php on line 259.
+ 1 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\MainController->uploadExcel()
+ 2 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MainController))
+ 3 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(85): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-30 03:32:53 --> File "C:\laragon\www\backend\writable\uploads/656802655f262.xlsx" does not exist.
+in VENDORPATH\phpoffice\phpspreadsheet\src\PhpSpreadsheet\Shared\File.php on line 149.
+ 1 VENDORPATH\phpoffice\phpspreadsheet\src\PhpSpreadsheet\IOFactory.php(135): PhpOffice\PhpSpreadsheet\Shared\File::assertFile('C:\\laragon\\www\\backend\\writable\\uploads/656802655f262.xlsx')
+ 2 VENDORPATH\phpoffice\phpspreadsheet\src\PhpSpreadsheet\IOFactory.php(106): PhpOffice\PhpSpreadsheet\IOFactory::createReaderForFile('C:\\laragon\\www\\backend\\writable\\uploads/656802655f262.xlsx', null)
+ 3 APPPATH\Controllers\MainController.php(310): PhpOffice\PhpSpreadsheet\IOFactory::load('C:\\laragon\\www\\backend\\writable\\uploads/656802655f262.xlsx')
+ 4 APPPATH\Controllers\MainController.php(293): App\Controllers\MainController->readExcelFile('C:\\laragon\\www\\backend\\writable\\uploads/656802655f262.xlsx')
+ 5 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\MainController->uploadExcel()
+ 6 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MainController))
+ 7 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(85): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-30 03:34:47 --> File "C:\laragon\www\backend\writable\uploads/656802d78f547.xlsx" does not exist.
+in VENDORPATH\phpoffice\phpspreadsheet\src\PhpSpreadsheet\Shared\File.php on line 149.
+ 1 VENDORPATH\phpoffice\phpspreadsheet\src\PhpSpreadsheet\IOFactory.php(135): PhpOffice\PhpSpreadsheet\Shared\File::assertFile('C:\\laragon\\www\\backend\\writable\\uploads/656802d78f547.xlsx')
+ 2 VENDORPATH\phpoffice\phpspreadsheet\src\PhpSpreadsheet\IOFactory.php(106): PhpOffice\PhpSpreadsheet\IOFactory::createReaderForFile('C:\\laragon\\www\\backend\\writable\\uploads/656802d78f547.xlsx', null)
+ 3 APPPATH\Controllers\MainController.php(310): PhpOffice\PhpSpreadsheet\IOFactory::load('C:\\laragon\\www\\backend\\writable\\uploads/656802d78f547.xlsx')
+ 4 APPPATH\Controllers\MainController.php(293): App\Controllers\MainController->readExcelFile('C:\\laragon\\www\\backend\\writable\\uploads/656802d78f547.xlsx')
+ 5 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\MainController->uploadExcel()
+ 6 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MainController))
+ 7 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(85): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-30 03:48:58 --> Call to a member function isValid() on null
+in APPPATH\Controllers\MainController.php on line 285.
+ 1 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\MainController->uploadExcel()
+ 2 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MainController))
+ 3 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(85): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-30 03:49:03 --> Call to a member function isValid() on null
+in APPPATH\Controllers\MainController.php on line 285.
+ 1 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\MainController->uploadExcel()
+ 2 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MainController))
+ 3 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(85): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-30 04:19:50 --> Call to a member function isValid() on null
+in APPPATH\Controllers\MainController.php on line 285.
+ 1 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\MainController->uploadExcel()
+ 2 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MainController))
+ 3 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(85): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-30 11:00:51 --> Call to undefined method App\Models\EncoderModel::getDataByDateRange
+in SYSTEMPATH\Model.php on line 873.
+ 1 APPPATH\Controllers\MainController.php(343): CodeIgniter\Model->__call('getDataByDateRange', [...])
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\MainController->get()
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MainController))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(85): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-11-30 11:30:13 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'IS NULL
+AND `DATE_VALIDATED` < IS NULL' at line 3 in C:\laragon\www\backend\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\laragon\www\backend\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\laragon\www\backend\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\laragon\www\backend\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\laragon\www\backend\system\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\laragon\www\backend\app\Controllers\MainController.php(470): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\laragon\www\backend\app\Controllers\MainController.php(454): App\Controllers\MainController->getByDateRange(NULL, NULL)
+#6 C:\laragon\www\backend\system\CodeIgniter.php(919): App\Controllers\MainController->fetchData()
+#7 C:\laragon\www\backend\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MainController))
+#8 C:\laragon\www\backend\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\laragon\www\backend\public\index.php(85): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2023-11-30 11:30:13 --> You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'IS NULL
+AND `DATE_VALIDATED` < IS NULL' at line 3
+in SYSTEMPATH\Database\BaseConnection.php on line 646.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `encoder`
+WHERE `DATE_VALIDATED` > IS NULL
+AND `DATE_VALIDATED` < IS NULL', [], false)
+ 2 APPPATH\Controllers\MainController.php(470): CodeIgniter\Database\BaseBuilder->get()
+ 3 APPPATH\Controllers\MainController.php(454): App\Controllers\MainController->getByDateRange(null, null)
+ 4 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\MainController->fetchData()
+ 5 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MainController))
+ 6 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(85): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-11-30 12:19:09 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'IS NULL
+AND `DATE_VALIDATED` <= '2023-11-23'' at line 3 in C:\laragon\www\backend\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\laragon\www\backend\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\laragon\www\backend\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\laragon\www\backend\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\laragon\www\backend\system\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\laragon\www\backend\app\Controllers\MainController.php(470): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\laragon\www\backend\app\Controllers\MainController.php(454): App\Controllers\MainController->getByDateRange(NULL, '2023-11-23')
+#6 C:\laragon\www\backend\system\CodeIgniter.php(919): App\Controllers\MainController->fetchData()
+#7 C:\laragon\www\backend\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MainController))
+#8 C:\laragon\www\backend\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\laragon\www\backend\public\index.php(85): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2023-11-30 12:19:09 --> You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'IS NULL
+AND `DATE_VALIDATED` <= '2023-11-23'' at line 3
+in SYSTEMPATH\Database\BaseConnection.php on line 646.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `encoder`
+WHERE `DATE_VALIDATED` > IS NULL
+AND `DATE_VALIDATED` <= :DATE_VALIDATED:', [...], false)
+ 2 APPPATH\Controllers\MainController.php(470): CodeIgniter\Database\BaseBuilder->get()
+ 3 APPPATH\Controllers\MainController.php(454): App\Controllers\MainController->getByDateRange(null, '2023-11-23')
+ 4 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\MainController->fetchData()
+ 5 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MainController))
+ 6 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(85): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-11-30 12:19:11 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'IS NULL
+AND `DATE_VALIDATED` <= '2023-11-23'' at line 3 in C:\laragon\www\backend\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\laragon\www\backend\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\laragon\www\backend\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\laragon\www\backend\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\laragon\www\backend\system\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\laragon\www\backend\app\Controllers\MainController.php(470): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\laragon\www\backend\app\Controllers\MainController.php(454): App\Controllers\MainController->getByDateRange(NULL, '2023-11-23')
+#6 C:\laragon\www\backend\system\CodeIgniter.php(919): App\Controllers\MainController->fetchData()
+#7 C:\laragon\www\backend\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MainController))
+#8 C:\laragon\www\backend\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\laragon\www\backend\public\index.php(85): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2023-11-30 12:19:11 --> You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'IS NULL
+AND `DATE_VALIDATED` <= '2023-11-23'' at line 3
+in SYSTEMPATH\Database\BaseConnection.php on line 646.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `encoder`
+WHERE `DATE_VALIDATED` > IS NULL
+AND `DATE_VALIDATED` <= :DATE_VALIDATED:', [...], false)
+ 2 APPPATH\Controllers\MainController.php(470): CodeIgniter\Database\BaseBuilder->get()
+ 3 APPPATH\Controllers\MainController.php(454): App\Controllers\MainController->getByDateRange(null, '2023-11-23')
+ 4 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\MainController->fetchData()
+ 5 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MainController))
+ 6 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(85): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-11-30 12:21:32 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'IS NULL
+AND `DATE_VALIDATED` < IS NULL' at line 3 in C:\laragon\www\backend\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\laragon\www\backend\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\laragon\www\backend\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\laragon\www\backend\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\laragon\www\backend\system\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\laragon\www\backend\app\Controllers\MainController.php(470): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\laragon\www\backend\app\Controllers\MainController.php(454): App\Controllers\MainController->getByDateRange(NULL, NULL)
+#6 C:\laragon\www\backend\system\CodeIgniter.php(919): App\Controllers\MainController->fetchData()
+#7 C:\laragon\www\backend\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MainController))
+#8 C:\laragon\www\backend\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\laragon\www\backend\public\index.php(85): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2023-11-30 12:21:32 --> You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'IS NULL
+AND `DATE_VALIDATED` < IS NULL' at line 3
+in SYSTEMPATH\Database\BaseConnection.php on line 646.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `encoder`
+WHERE `DATE_VALIDATED` > IS NULL
+AND `DATE_VALIDATED` < IS NULL', [], false)
+ 2 APPPATH\Controllers\MainController.php(470): CodeIgniter\Database\BaseBuilder->get()
+ 3 APPPATH\Controllers\MainController.php(454): App\Controllers\MainController->getByDateRange(null, null)
+ 4 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\MainController->fetchData()
+ 5 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MainController))
+ 6 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(85): CodeIgniter\CodeIgniter->run()

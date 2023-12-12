@@ -1,0 +1,183 @@
+CRITICAL - 2023-12-10 07:53:46 --> Attempt to read property "userId" on null
+in APPPATH\Controllers\MainController.php on line 460.
+ 1 APPPATH\Controllers\MainController.php(460): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "userId" on null', 'C:\\laragon\\www\\backend\\app\\Controllers\\MainController.php', 460)
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\MainController->updateStatus()
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MainController))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(85): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-10 08:23:39 --> Too few arguments to function App\Controllers\MainController::sendResetEmail(), 0 passed in C:\laragon\www\backend\system\CodeIgniter.php on line 919 and exactly 1 expected
+in APPPATH\Controllers\MainController.php on line 416.
+ 1 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\MainController->sendResetEmail()
+ 2 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MainController))
+ 3 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(85): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-10 08:27:54 --> Too few arguments to function App\Controllers\MainController::sendResetEmail(), 0 passed in C:\laragon\www\backend\system\CodeIgniter.php on line 919 and exactly 1 expected
+in APPPATH\Controllers\MainController.php on line 416.
+ 1 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\MainController->sendResetEmail()
+ 2 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MainController))
+ 3 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(85): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-10 08:28:26 --> Too few arguments to function App\Controllers\MainController::sendResetEmail(), 0 passed in C:\laragon\www\backend\system\CodeIgniter.php on line 919 and exactly 1 expected
+in APPPATH\Controllers\MainController.php on line 416.
+ 1 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\MainController->sendResetEmail()
+ 2 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MainController))
+ 3 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(85): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-10 08:28:38 --> Too few arguments to function App\Controllers\MainController::sendResetEmail(), 0 passed in C:\laragon\www\backend\system\CodeIgniter.php on line 919 and exactly 1 expected
+in APPPATH\Controllers\MainController.php on line 416.
+ 1 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\MainController->sendResetEmail()
+ 2 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MainController))
+ 3 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(85): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-10 08:28:58 --> Too few arguments to function App\Controllers\MainController::sendResetEmail(), 0 passed in C:\laragon\www\backend\system\CodeIgniter.php on line 919 and exactly 1 expected
+in APPPATH\Controllers\MainController.php on line 416.
+ 1 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\MainController->sendResetEmail()
+ 2 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MainController))
+ 3 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(85): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-10 08:29:04 --> Too few arguments to function App\Controllers\MainController::sendResetEmail(), 0 passed in C:\laragon\www\backend\system\CodeIgniter.php on line 919 and exactly 1 expected
+in APPPATH\Controllers\MainController.php on line 416.
+ 1 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\MainController->sendResetEmail()
+ 2 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MainController))
+ 3 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(85): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-10 08:30:12 --> Too few arguments to function App\Controllers\MainController::sendResetEmail(), 0 passed in C:\laragon\www\backend\system\CodeIgniter.php on line 919 and exactly 1 expected
+in APPPATH\Controllers\MainController.php on line 416.
+ 1 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\MainController->sendResetEmail()
+ 2 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MainController))
+ 3 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(85): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-10 08:30:16 --> Too few arguments to function App\Controllers\MainController::sendResetEmail(), 0 passed in C:\laragon\www\backend\system\CodeIgniter.php on line 919 and exactly 1 expected
+in APPPATH\Controllers\MainController.php on line 416.
+ 1 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\MainController->sendResetEmail()
+ 2 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MainController))
+ 3 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(85): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-10 08:30:37 --> Too few arguments to function App\Controllers\MainController::sendResetEmail(), 0 passed in C:\laragon\www\backend\system\CodeIgniter.php on line 919 and exactly 1 expected
+in APPPATH\Controllers\MainController.php on line 416.
+ 1 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\MainController->sendResetEmail()
+ 2 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MainController))
+ 3 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(85): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-10 08:31:10 --> Too few arguments to function App\Controllers\MainController::sendResetEmail(), 0 passed in C:\laragon\www\backend\system\CodeIgniter.php on line 919 and exactly 1 expected
+in APPPATH\Controllers\MainController.php on line 416.
+ 1 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\MainController->sendResetEmail()
+ 2 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MainController))
+ 3 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(85): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-10 08:32:31 --> Too few arguments to function App\Controllers\MainController::sendResetEmail(), 0 passed in C:\laragon\www\backend\system\CodeIgniter.php on line 919 and exactly 1 expected
+in APPPATH\Controllers\MainController.php on line 416.
+ 1 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\MainController->sendResetEmail()
+ 2 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MainController))
+ 3 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(85): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-10 08:35:57 --> Too few arguments to function App\Controllers\MainController::sendResetEmail(), 0 passed in C:\laragon\www\backend\system\CodeIgniter.php on line 919 and exactly 1 expected
+in APPPATH\Controllers\MainController.php on line 416.
+ 1 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\MainController->sendResetEmail()
+ 2 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MainController))
+ 3 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(85): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-10 08:37:11 --> Too few arguments to function App\Controllers\MainController::sendResetEmail(), 0 passed in C:\laragon\www\backend\system\CodeIgniter.php on line 919 and exactly 1 expected
+in APPPATH\Controllers\MainController.php on line 416.
+ 1 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\MainController->sendResetEmail()
+ 2 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MainController))
+ 3 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(85): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-10 08:49:35 --> Too few arguments to function App\Controllers\MainController::sendResetEmail(), 0 passed in C:\laragon\www\backend\system\CodeIgniter.php on line 919 and exactly 1 expected
+in APPPATH\Controllers\MainController.php on line 416.
+ 1 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\MainController->sendResetEmail()
+ 2 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MainController))
+ 3 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(85): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-10 08:49:50 --> Too few arguments to function App\Controllers\MainController::sendResetEmail(), 0 passed in C:\laragon\www\backend\system\CodeIgniter.php on line 919 and exactly 1 expected
+in APPPATH\Controllers\MainController.php on line 416.
+ 1 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\MainController->sendResetEmail()
+ 2 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MainController))
+ 3 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(85): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-10 08:51:43 --> Too few arguments to function App\Controllers\MainController::sendResetEmail(), 0 passed in C:\laragon\www\backend\system\CodeIgniter.php on line 919 and exactly 1 expected
+in APPPATH\Controllers\MainController.php on line 416.
+ 1 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\MainController->sendResetEmail()
+ 2 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MainController))
+ 3 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(85): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-10 08:58:43 --> Too few arguments to function App\Controllers\MainController::sendResetEmail(), 0 passed in C:\laragon\www\backend\system\CodeIgniter.php on line 919 and exactly 1 expected
+in APPPATH\Controllers\MainController.php on line 416.
+ 1 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\MainController->sendResetEmail()
+ 2 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MainController))
+ 3 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(85): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-10 08:59:37 --> Too few arguments to function App\Controllers\MainController::sendResetEmail(), 0 passed in C:\laragon\www\backend\system\CodeIgniter.php on line 919 and exactly 1 expected
+in APPPATH\Controllers\MainController.php on line 416.
+ 1 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\MainController->sendResetEmail()
+ 2 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MainController))
+ 3 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(85): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-10 09:02:21 --> Attempt to read property "email" on null
+in APPPATH\Controllers\MainController.php on line 419.
+ 1 APPPATH\Controllers\MainController.php(419): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "email" on null', 'C:\\laragon\\www\\backend\\app\\Controllers\\MainController.php', 419)
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\MainController->sendResetEmail()
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MainController))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(85): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-10 09:02:31 --> Attempt to read property "email" on null
+in APPPATH\Controllers\MainController.php on line 419.
+ 1 APPPATH\Controllers\MainController.php(419): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "email" on null', 'C:\\laragon\\www\\backend\\app\\Controllers\\MainController.php', 419)
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\MainController->sendResetEmail()
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MainController))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(85): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-10 09:13:45 --> Attempt to read property "email" on null
+in APPPATH\Controllers\MainController.php on line 419.
+ 1 APPPATH\Controllers\MainController.php(419): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "email" on null', 'C:\\laragon\\www\\backend\\app\\Controllers\\MainController.php', 419)
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\MainController->sendResetEmail()
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MainController))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(85): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-10 09:38:46 --> Trying to access array offset on value of type null
+in APPPATH\Controllers\MainController.php on line 441.
+ 1 APPPATH\Controllers\MainController.php(441): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'C:\\laragon\\www\\backend\\app\\Controllers\\MainController.php', 441)
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\MainController->sendResetEmail()
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MainController))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(85): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-10 09:38:50 --> Attempt to read property "email" on null
+in APPPATH\Controllers\MainController.php on line 419.
+ 1 APPPATH\Controllers\MainController.php(419): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "email" on null', 'C:\\laragon\\www\\backend\\app\\Controllers\\MainController.php', 419)
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\MainController->sendResetEmail()
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MainController))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(85): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-10 09:41:37 --> Trying to access array offset on value of type null
+in APPPATH\Controllers\MainController.php on line 442.
+ 1 APPPATH\Controllers\MainController.php(442): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'C:\\laragon\\www\\backend\\app\\Controllers\\MainController.php', 442)
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\MainController->sendResetEmail()
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MainController))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(85): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-12-10 13:22:58 --> mysqli_sql_exception: Duplicate entry '1127971' for key 'minsu_victoria_roster_list_as_of_october_2023.idx_entry_id' in C:\laragon\www\backend\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\laragon\www\backend\system\Database\MySQLi\Connection.php(306): mysqli->query('INSERT INTO `mi...', 0)
+#1 C:\laragon\www\backend\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `mi...')
+#2 C:\laragon\www\backend\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `mi...')
+#3 C:\laragon\www\backend\system\Database\BaseBuilder.php(2308): CodeIgniter\Database\BaseConnection->query('INSERT INTO `mi...', Array, false)
+#4 C:\laragon\www\backend\system\Model.php(319): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\laragon\www\backend\system\BaseModel.php(788): CodeIgniter\Model->doInsert(Array)
+#6 C:\laragon\www\backend\system\Model.php(715): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\laragon\www\backend\app\Controllers\MainController.php(116): CodeIgniter\Model->insert(Array)
+#8 C:\laragon\www\backend\system\CodeIgniter.php(919): App\Controllers\MainController->restoreBeneficiary('6')
+#9 C:\laragon\www\backend\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MainController))
+#10 C:\laragon\www\backend\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\laragon\www\backend\public\index.php(85): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2023-12-10 13:22:58 --> Duplicate entry '1127971' for key 'minsu_victoria_roster_list_as_of_october_2023.idx_entry_id'
+in SYSTEMPATH\Database\BaseConnection.php on line 646.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2308): CodeIgniter\Database\BaseConnection->query('INSERT INTO `minsu_victoria_roster_list_as_of_october_2023` (`REGION`, `PROVINCE`, `MUNICIPALITY`, `BRGY`, `HH_ID`, `ENTRY_ID`, `FIRST_NAME`, `MIDDLE_NAME`, `LAST_NAME`, `EXT_NAME`, `BIRTHDAY`, `AGE`, `SEX`, `CLIENT_STATUS`, `MEMBER_STATUS`, `RELATION_TO_HH_HEAD`, `GRANTEE`, `REGISTRATION_STATUS`, `HH_SET`, `SOLO_PARENT`, `IP_AFFILIATION`, `phil_id`, `PREGNANCY_STATUS`, `HEALTH_FACILITY`, `CHILD_BENE`, `GRADE_LEVEL`, `ATTEND_SCHOOL`, `SCHOOL_NAME`, `MONITORED_EDUC`, `REASON_FOR_NOT_ATTENDING_EDUC`, `DATE_REASON_EDUC`, `MONITORED_HEALTH`, `REASON_FOR_NOT_ATTENDING_HEALTH`, `DATE_REASON_HEALTH`, `DISABILITY_ID`, `DISABILITY_STATUS`, `LRN`) VALUES (:REGION:, :PROVINCE:, :MUNICIPALITY:, :BRGY:, :HH_ID:, :ENTRY_ID:, :FIRST_NAME:, :MIDDLE_NAME:, :LAST_NAME:, :EXT_NAME:, :BIRTHDAY:, :AGE:, :SEX:, :CLIENT_STATUS:, :MEMBER_STATUS:, :RELATION_TO_HH_HEAD:, :GRANTEE:, :REGISTRATION_STATUS:, :HH_SET:, :SOLO_PARENT:, :IP_AFFILIATION:, :phil_id:, :PREGNANCY_STATUS:, :HEALTH_FACILITY:, :CHILD_BENE:, :GRADE_LEVEL:, :ATTEND_SCHOOL:, :SCHOOL_NAME:, :MONITORED_EDUC:, :REASON_FOR_NOT_ATTENDING_EDUC:, :DATE_REASON_EDUC:, :MONITORED_HEALTH:, :REASON_FOR_NOT_ATTENDING_HEALTH:, :DATE_REASON_HEALTH:, :DISABILITY_ID:, :DISABILITY_STATUS:, :LRN:)', [...], false)
+ 2 SYSTEMPATH\Model.php(319): CodeIgniter\Database\BaseBuilder->insert()
+ 3 SYSTEMPATH\BaseModel.php(788): CodeIgniter\Model->doInsert([...])
+ 4 SYSTEMPATH\Model.php(715): CodeIgniter\BaseModel->insert([...], true)
+ 5 APPPATH\Controllers\MainController.php(116): CodeIgniter\Model->insert([...])
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\MainController->restoreBeneficiary('6')
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MainController))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(85): CodeIgniter\CodeIgniter->run()
